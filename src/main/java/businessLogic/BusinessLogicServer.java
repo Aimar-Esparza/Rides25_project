@@ -1,4 +1,5 @@
 /**
+
  * Package with the business logic of the application.
  */
 package businessLogic;

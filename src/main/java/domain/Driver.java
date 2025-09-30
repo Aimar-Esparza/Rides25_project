@@ -12,52 +12,72 @@ import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
-public class Driver implements Serializable {
+public class Driver extends User implements Serializable  {
 	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-	@XmlID
-	@Id 
-	private String email;
-	private String name; 
+	private static final long serialVersionUID = 1L; 
 	@XmlIDREF
 	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
 	private List<Ride> rides=new Vector<Ride>();
+	@XmlIDREF
+	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
+	private List<Car> cars=new Vector<Car>();
+	private double val;
+	private int kantVal;
 
 	public Driver() {
 		super();
 	}
 
-	public Driver(String email, String name) {
-		this.email = email;
-		this.name = name;
+	public Driver(String email, String username, String password, double money) {
+		super(email, username, password, money);
+		this.val = 0;
+		this.kantVal = 0;
 	}
 	
+	public List<Ride> getRides(){
+		return rides;
+	}
 	
-	public String getEmail() {
-		return email;
+	public List<Car> getCars(){
+		return cars;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	
+	public double getVal() {
+		return val;
+	}
+	
+	public void setVal(double val) {
+		this.val = val;
+	}
+	
+	public void modifyVal(int v){
+		val = (val * kantVal) + v;
+		kantVal ++;
+		val = val / kantVal;
+	}
+	
+	public Car addCar(Car car) {
+		if (!cars.contains(car)){
+			cars.add(car);
+			return car;
+		}else {
+			return null;
+		}
+		
+	}
+
+	public Car addCar(String matricula, int nplaces) {
+		Car car = new Car(matricula, nplaces, this);
+		Car c = addCar(car);
+		return c;
+	}
 	
 	public String toString(){
-		return email+";"+name+rides;
+		return super.getEmail() + " ; " + super.getUsername() + " ; " + val;
 	}
 	
 	/**
@@ -67,10 +87,13 @@ public class Driver implements Serializable {
 	 * @param betMinimum of that question
 	 * @return Bet
 	 */
-	public Ride addRide(String from, String to, Date date, int nPlaces, float price)  {
-        Ride ride=new Ride(from,to,date,nPlaces,price, this);
-        rides.add(ride);
-        return ride;
+	public Ride addRide(String from, String to, Date date, int nPlaces, float price, Car car)  {
+		if (cars.contains(car)){
+			Ride ride=new Ride(from,to,date,nPlaces,price, this, car);
+			rides.add(ride);
+			return ride;
+		}
+		return null;
 	}
 
 	/**
@@ -91,32 +114,15 @@ public class Driver implements Serializable {
 		
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Driver other = (Driver) obj;
-		if (email != other.email)
-			return false;
-		return true;
+		return super.equals(obj);
 	}
 
-	public Ride removeRide(String from, String to, Date date) {
-		boolean found=false;
-		int index=0;
-		Ride r=null;
-		while (!found && index<=rides.size()) {
-			r=rides.get(++index);
-			if ( (java.util.Objects.equals(r.getFrom(),from)) && (java.util.Objects.equals(r.getTo(),to)) && (java.util.Objects.equals(r.getDate(),date)) )
-			found=true;
-		}
-			
-		if (found) {
-			rides.remove(index);
-			return r;
-		} else return null;
+	public void removeRide(Ride r) {
+		rides.remove(r);
+	}
+	
+	public void removeCar(Car c) {
+		cars.remove(c);
 	}
 	
 }

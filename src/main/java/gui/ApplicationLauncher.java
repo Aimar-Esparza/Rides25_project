@@ -1,4 +1,4 @@
-package gui;
+	package gui;
 
 import java.awt.Color;
 import java.net.URL;
@@ -28,11 +28,9 @@ public class ApplicationLauncher {
 		
 		System.out.println("Locale: "+Locale.getDefault());
 		
-	    Driver driver=new Driver("driver3@gmail.com","Test Driver");
+	    Driver driver=new Driver("driver3@gmail.com","Test Driver","123123", 111);
 
 		
-		MainGUI a=new MainGUI(driver);
-		a.setVisible(true);
 
 
 		try {
@@ -41,7 +39,7 @@ public class ApplicationLauncher {
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 			
 			if (c.isBusinessLogicLocal()) {
-			
+				
 				DataAccess da= new DataAccess();
 				appFacadeInterface=new BLFacadeImplementation(da);
 
@@ -50,7 +48,7 @@ public class ApplicationLauncher {
 			
 			else { //If remote
 				
-				 String serviceName= "http://"+c.getBusinessLogicNode() +":"+ c.getBusinessLogicPort()+"/ws/"+c.getBusinessLogicName()+"?wsdl";
+				String serviceName= "http://"+c.getBusinessLogicNode() +":"+ c.getBusinessLogicPort()+"/ws/"+c.getBusinessLogicName()+"?wsdl";
 				 
 				URL url = new URL(serviceName);
 
@@ -64,19 +62,20 @@ public class ApplicationLauncher {
 		         appFacadeInterface = service.getPort(BLFacade.class);
 			} 
 			
-			MainGUI.setBussinessLogic(appFacadeInterface);
+			MainDriverGUI.setBussinessLogic(appFacadeInterface);
 
 		
 
 			
 		}catch (Exception e) {
-			a.jLabelSelectOption.setText("Error: "+e.toString());
-			a.jLabelSelectOption.setForeground(Color.RED);	
+			//a.jLabelSelectOption.setText("Error: "+e.toString());
+			//a.jLabelSelectOption.setForeground(Color.RED);	
 			
 			System.out.println("Error in ApplicationLauncher: "+e.toString());
 		}
 		//a.pack();
-
+		LanguageGUI a=new LanguageGUI(0);
+		a.setVisible(true);
 
 	}
 

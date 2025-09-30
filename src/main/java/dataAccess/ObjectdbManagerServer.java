@@ -124,7 +124,7 @@ public class ObjectdbManagerServer extends JDialog {
 			textArea.append("Something has happened in ObjectDbManagerServer: "+e.toString());
 
 		}
-		
+		 
 		}
 	}
 

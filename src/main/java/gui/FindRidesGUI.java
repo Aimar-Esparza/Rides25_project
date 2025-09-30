@@ -31,7 +31,8 @@ public class FindRidesGUI extends JFrame {
 	private final JLabel jLabelEventDate = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.RideDate"));
 	private final JLabel jLabelEvents = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.Rides")); 
 
-	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("SeeBookingGUI.Back"));
+	private JButton jButtonLogin = null;
 
 	// Code for JCalendar
 	private JCalendar jCalendar1 = new JCalendar();
@@ -44,6 +45,8 @@ public class FindRidesGUI extends JFrame {
 	private JTable tableRides= new JTable();
 
 	private DefaultTableModel tableModelRides;
+	
+	protected JLabel jLabelSelectOption;
 
 
 	private String[] columnNamesRides = new String[] {
@@ -52,36 +55,73 @@ public class FindRidesGUI extends JFrame {
 			ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.Price")
 	};
 
-
-	public FindRidesGUI()
+	private int userType = 0;
+	private final JButton jButtonSignUp = new JButton();
+	
+	
+	public FindRidesGUI(int type)
 	{
+		this.userType = type;
 
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(700, 500));
 		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.FindRides"));
 
+		
+		JButton btnSingUp = new JButton("SING UP");
+		btnSingUp.setText(ResourceBundle.getBundle("Etiquetas").getString("LoginGUI.SingUp"));
+		btnSingUp.setBounds(546, 379, 130, 30);
+		getContentPane().add(btnSingUp);
+		btnSingUp.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
+				JFrame a = new SignUpGUI();
+				a.setVisible(true);
+				dispose();
+			}
+		});
 		jLabelEventDate.setBounds(new Rectangle(457, 6, 140, 25));
 		jLabelEvents.setBounds(172, 229, 259, 16);
 
 		this.getContentPane().add(jLabelEventDate, null);
-		this.getContentPane().add(jLabelEvents);
+		this.getContentPane().add(jLabelEvents); 
 
-		jButtonClose.setBounds(new Rectangle(274, 419, 130, 30));
+		jButtonClose.setBounds(new Rectangle(6, 419, 130, 30));
 
 		jButtonClose.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				jButton2_actionPerformed(e);
+				if(type == 0) {
+					System.exit(1);
+				}else {
+					dispose();	
+				}
+			} 
+		});
+		
+		jButtonLogin = new JButton();
+		if (userType != 0) { 
+			jButtonLogin.setVisible(false);
+			btnSingUp.setVisible(false);		
+		}
+		jButtonLogin.setBounds(new Rectangle(546, 419, 130, 30));
+		jButtonLogin.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.Login"));
+		jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
+				JFrame a = new LoginGUI();
+				a.setVisible(true);
+				dispose();
 			}
 		});
-		BLFacade facade = MainGUI.getBusinessLogic();
+		
+		
+		BLFacade facade = MainDriverGUI.getBusinessLogic();
 		List<String> origins=facade.getDepartCities();
 		
 		for(String location:origins) originLocations.addElement(location);
 		
 		jLabelOrigin.setBounds(new Rectangle(6, 56, 92, 20));
-		jLabelDestination.setBounds(6, 81, 61, 16);
+		jLabelDestination.setBounds(6, 81, 92, 16);
 		getContentPane().add(jLabelOrigin);
 
 		getContentPane().add(jLabelDestination);
@@ -98,7 +138,7 @@ public class FindRidesGUI extends JFrame {
 		jComboBoxOrigin.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
 				destinationCities.removeAllElements();
-				BLFacade facade = MainGUI.getBusinessLogic();
+				BLFacade facade = MainDriverGUI.getBusinessLogic();
 
 				List<String> aCities=facade.getDestinationCities((String)jComboBoxOrigin.getSelectedItem());
 				for(String aciti:aCities) {
@@ -110,7 +150,7 @@ public class FindRidesGUI extends JFrame {
 				
 			}
 		});
-
+ 
 
 		jComboBoxDestination.setModel(destinationCities);
 		jComboBoxDestination.setBounds(new Rectangle(103, 80, 172, 20));
@@ -119,7 +159,7 @@ public class FindRidesGUI extends JFrame {
 
 				paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,	new Color(210,228,238));
 
-				BLFacade facade = MainGUI.getBusinessLogic();
+				BLFacade facade = MainDriverGUI.getBusinessLogic();
 
 				datesWithRidesCurrentMonth=facade.getThisMonthDatesWithRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),jCalendar1.getDate());
 				paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,Color.CYAN);
@@ -128,6 +168,7 @@ public class FindRidesGUI extends JFrame {
 		});
 
 		this.getContentPane().add(jButtonClose, null);
+		this.getContentPane().add(jButtonLogin, null);
 		this.getContentPane().add(jComboBoxOrigin, null);
 
 		this.getContentPane().add(jComboBoxDestination, null);
@@ -174,14 +215,14 @@ public class FindRidesGUI extends JFrame {
 						tableModelRides.setDataVector(null, columnNamesRides);
 						tableModelRides.setColumnCount(4); // another column added to allocate ride objects
 
-						BLFacade facade = MainGUI.getBusinessLogic();
+						BLFacade facade = MainDriverGUI.getBusinessLogic();
 						List<domain.Ride> rides=facade.getRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),UtilDate.trim(jCalendar1.getDate()));
 
 						if (rides.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.NoRides")+ ": "+dateformat1.format(calendarAct.getTime()));
 						else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.Rides")+ ": "+dateformat1.format(calendarAct.getTime()));
 						for (domain.Ride ride:rides){
 							Vector<Object> row = new Vector<Object>();
-							row.add(ride.getDriver().getName());
+							row.add(ride.getDriver().getUsername());
 							row.add(ride.getnPlaces());
 							row.add(ride.getPrice());
 							row.add(ride); // ev object added in order to obtain it with tableModelEvents.getValueAt(i,3)
@@ -226,8 +267,80 @@ public class FindRidesGUI extends JFrame {
 		this.getContentPane().add(scrollPaneEvents, null);
 		datesWithRidesCurrentMonth=facade.getThisMonthDatesWithRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),jCalendar1.getDate());
 		paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,Color.CYAN);
-
+		
+		JButton jButtonBook = new JButton((String) null);
+		if (userType != 2) { 
+			jButtonBook.setVisible(false);
+		}
+		jButtonBook.setBounds(new Rectangle(6, 419, 130, 30));
+		jButtonBook.setBounds(283, 424, 130, 30);
+		jButtonBook.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.Book"));
+		jButtonBook.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
+				int selectedRow = tableRides.getSelectedRow();
+				if (selectedRow != -1) {
+					Ride selectedRide = (Ride) tableModelRides.getValueAt(selectedRow, 3);
+					boolean ema = facade.book(selectedRide.getRideNumber(), MainPassengerGUI.getPassenger().getEmail());
+					System.out.println("Erreserba " + ema + " itzuli du.");
+					MainDriverGUI.getBusinessLogic().priorityReservation(selectedRide.getRideNumber());
+					refresh();
+				}
+			}
+		});
+		getContentPane().add(jButtonBook);
+		
+		
+		
+		
+		
+		if(type == 0) {
+			addWindowListener(new WindowAdapter() {
+				@Override
+				public void windowClosing(WindowEvent e) {
+					System.exit(1);
+				}
+			});
+		}
 	}
+	/**
+	 * This method refresh the table of rides
+	 */
+	public void refresh() {
+		try {
+			tableModelRides.setDataVector(null, columnNamesRides);
+			tableModelRides.setColumnCount(4); // another column added to allocate ride objects
+	
+			BLFacade facade = MainDriverGUI.getBusinessLogic();
+			List<domain.Ride> rides=facade.getRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),UtilDate.trim(jCalendar1.getDate()));
+	
+			 DateFormat dateFormat1 = DateFormat.getDateInstance(1, jCalendar1.getLocale());
+			
+			if (rides.isEmpty() ) jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.NoRides")+ ": "+dateFormat1.format(calendarAct.getTime()));
+			else jLabelEvents.setText(ResourceBundle.getBundle("Etiquetas").getString("FindRidesGUI.Rides")+ ": "+dateFormat1.format(calendarAct.getTime()));
+			for (domain.Ride ride:rides){
+				if(ride.getnPlaces() > 0) {
+					Vector<Object> row = new Vector<Object>();
+					row.add(ride.getDriver().getUsername());
+					row.add(ride.getnPlaces());
+					row.add(ride.getPrice());
+					row.add(ride); // ev object added in order to obtain it with tableModelEvents.getValueAt(i,3)
+					tableModelRides.addRow(row);
+				}
+			}
+			datesWithRidesCurrentMonth=facade.getThisMonthDatesWithRides((String)jComboBoxOrigin.getSelectedItem(),(String)jComboBoxDestination.getSelectedItem(),jCalendar1.getDate());
+			paintDaysWithEvents(jCalendar1,datesWithRidesCurrentMonth,Color.CYAN);
+		} catch (Exception e1) {
+
+			e1.printStackTrace();
+		}
+		tableRides.getColumnModel().getColumn(0).setPreferredWidth(170);
+		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
+		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
+		tableRides.getColumnModel().removeColumn(tableRides.getColumnModel().getColumn(3)); // not shown in JTable
+	}
+	
+	
+	
 	public static void paintDaysWithEvents(JCalendar jCalendar,List<Date> datesWithEventsCurrentMonth, Color color) {
 		//		// For each day with events in current month, the background color for that day is changed to cyan.
 
@@ -241,9 +354,9 @@ public class FindRidesGUI extends JFrame {
 		calendar.set(Calendar.DAY_OF_MONTH, 1);
 		int offset = calendar.get(Calendar.DAY_OF_WEEK);
 
-		if (Locale.getDefault().equals(new Locale("es")))
-			offset += 4;
-		else
+		//if (Locale.getDefault().equals(new Locale("es")))
+			//offset += 4;
+		//else
 			offset += 5;
 
 
@@ -271,8 +384,8 @@ public class FindRidesGUI extends JFrame {
 
 
 	}
-	private void jButton2_actionPerformed(ActionEvent e) {
-		this.setVisible(false);
+	
+	public FindRidesGUI() {
+		new FindRidesGUI(this.userType);
 	}
-
 }

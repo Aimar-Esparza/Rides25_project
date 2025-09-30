@@ -1,0 +1,60 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-02-10 10:38:05 #1 store] 
+Database 'C:\Users\Aimar\git\Rides24\src\main\resources\rides.temp' is opened by 7676@Aimar-PC
+
+[2025-02-10 10:38:05 #2 type.registry] 
+New type domain.Driver
+
+[2025-02-10 10:38:05 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-02-10 10:38:05 #4 type.registry] 
+New type domain.Ride
+
+[2025-02-10 10:38:05 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-02-10 10:38:06 #6 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-02-10 10:38:06 #7 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-02-10 10:41:01 #1 store] 
+Database 'C:\Users\Aimar\git\Rides24\src\main\resources\rides.temp' is opened by 6060@Aimar-PC
+
+[2025-02-10 10:41:01 #2 type.registry] 
+New type domain.Driver
+
+[2025-02-10 10:41:01 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-02-10 10:41:01 #4 type.registry] 
+New type domain.Ride
+
+[2025-02-10 10:41:01 #5 type] 
+Type domain.Ride is not enhanced.
+
+[2025-02-10 10:41:01 #6 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-02-10 10:41:01 #7 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-02-10 10:58:36 #1 store] 
+Database 'C:\Users\Aimar\git\Rides24\src\main\resources\rides.temp' has been recovered (tr. 1-6)
+
+[2025-02-10 10:58:36 #2 store] 
+Database 'C:\Users\Aimar\git\Rides24\src\main\resources\rides.temp' is opened by 10376@Aimar-PC
+
+[2025-02-10 10:58:36 #3 type] 
+Type domain.Driver is not enhanced.
+
+[2025-02-10 10:58:36 #4 type] 
+Type domain.Ride is not enhanced.
+

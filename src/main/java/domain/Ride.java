@@ -1,11 +1,16 @@
 package domain;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Objects;
+import java.util.Vector;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -25,14 +30,23 @@ public class Ride implements Serializable {
 	private int nPlaces;
 	private Date date;
 	private float price;
+	@ManyToOne
+	private Driver driver;
+	private Boolean done;
+	@ManyToOne
+	private Car car;
+	@XmlElement(name = "booking")
+	@XmlIDREF
+	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.PERSIST)
+	private List<Booking> book = new ArrayList<Booking>();
 	
-	private Driver driver;  
+	
 	
 	public Ride(){
 		super();
 	}
 	
-	public Ride(Integer rideNumber, String from, String to, Date date, int nPlaces, float price, Driver driver) {
+	public Ride(Integer rideNumber, String from, String to, Date date, int nPlaces, float price, Driver driver, Car car) {
 		super();
 		this.rideNumber = rideNumber;
 		this.from = from;
@@ -41,11 +55,12 @@ public class Ride implements Serializable {
 		this.date=date;
 		this.price=price;
 		this.driver = driver;
+		this.done = false;
 	}
 
 	
 
-	public Ride(String from, String to,  Date date, int nPlaces, float price, Driver driver) {
+	public Ride(String from, String to,  Date date, int nPlaces, float price, Driver driver, Car car) {
 		super();
 		this.from = from;
 		this.to = to;
@@ -53,6 +68,42 @@ public class Ride implements Serializable {
 		this.date=date;
 		this.price=price;
 		this.driver = driver;
+		this.car = car;
+		this.done = false;
+	}
+	
+	public boolean isDone() {
+		return done;
+	}
+	
+	public void done() {
+		this.done = true;
+	}
+	
+	public void notDone() {
+		this.done = false;
+	}
+	
+	public void addBooking(Booking r) {
+		this.book.add(r);
+	}
+	
+	public List<Booking> getBookings(){
+		return this.book;
+	}
+	
+	public boolean hasBookings() {
+		if(book.isEmpty()) {
+			return false;
+		}else {
+			return true;
+		}
+	}
+	
+	public void removeBooking(Booking b) {
+		if(b != null) {
+			this.book.remove(b);
+		}
 	}
 	
 	/**
@@ -140,7 +191,7 @@ public class Ride implements Serializable {
 	}
 
 	
-	public float getnPlaces() {
+	public int getnPlaces() {
 		return nPlaces;
 	}
 
@@ -180,12 +231,36 @@ public class Ride implements Serializable {
 		this.price = price;
 	}
 
-
-
-	public String toString(){
-		return rideNumber+";"+";"+from+";"+to+";"+date;  
+	public Car getCar() {
+		return car;
 	}
 
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(date, driver, from, rideNumber, to);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ride other = (Ride) obj;
+		return Objects.equals(date, other.date) && Objects.equals(driver, other.driver)
+				&& Objects.equals(from, other.from) && Objects.equals(rideNumber, other.rideNumber)
+				&& Objects.equals(to, other.to);
+	}
+
+	public String toString() {
+		return from + " > " + to + " ; " + date; // " ; " + driver 
+	}
 
 
 

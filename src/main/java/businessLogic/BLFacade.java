@@ -4,8 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 //import domain.Booking;
-import domain.Ride;
-import domain.Driver;
+import domain.*;
 import exceptions.RideMustBeLaterThanTodayException;
 import exceptions.RideAlreadyExistException;
 
@@ -18,6 +17,59 @@ import javax.jws.WebService;
 @WebService
 public interface BLFacade  {
 	  
+	
+	@WebMethod public User login(String email, String password);
+	
+	@WebMethod public User createUser(String email, String username, String password, double money, boolean type);
+	
+	@WebMethod public void deleteUser(String email);
+	
+	@WebMethod public boolean book(int ridenumber, String email);
+	
+	@WebMethod public void removeMoney(String email, double money, String s, Booking b);
+	
+	@WebMethod public void addMoney(String email, double money, String s, Booking b);
+	
+	@WebMethod public List<MoneyTransaction> getTransactions(User user);
+	
+	@WebMethod public List<Ride> getAllRides(Driver d);
+	
+	@WebMethod public void acceptBooking(int bookingId);
+	
+	@WebMethod public void rejectBooking(int bookingId);
+	
+	@WebMethod public void removeRide(int rideNumber);
+	
+	@WebMethod public void addValoration(int bookingId, boolean done, int val, String com, String email);
+	
+	@WebMethod public List<Valoration> getValorations(String email);
+	
+	@WebMethod public List<Booking> getBookings(String email);
+	
+	@WebMethod public void priorityReservation(int rideId);
+	
+	@WebMethod public int generateNotification(String email);
+	
+	@WebMethod public List<Notification> getNotifications(String email);
+	
+	@WebMethod public void createRequest(String email, String or, String de, int val, int kant, Date date, boolean autoBuy);
+	
+	@WebMethod public void deleteRequest(int requestId);
+	
+	@WebMethod public List<Request> getRequest(String email);
+	
+	@WebMethod public Car addCar(String matricula, int nplaces, String email);
+	
+	@WebMethod public List<Car> getCars(String email);
+	
+	@WebMethod public void deleteNotification(int notificationId);
+	
+	@WebMethod public void createReclamation(int bookingId, String comment);
+	
+	@WebMethod public Reclamation getNextReclamation();
+	
+	@WebMethod public void completeReclamation(int reclamationId, String pemail,String demail, boolean ok);
+	
 	/**
 	 * This method returns all the cities where rides depart 
 	 * @return collection of cities
@@ -47,7 +99,7 @@ public interface BLFacade  {
  	 * @throws RideAlreadyExistException if the same ride already exists for the driver
 	 */
    @WebMethod
-   public Ride createRide( String from, String to, Date date, int nPlaces, float price, String driverEmail) throws RideMustBeLaterThanTodayException, RideAlreadyExistException;
+   public Ride createRide( String from, String to, Date date, int nPlaces, float price, Car car, String driverEmail) throws RideMustBeLaterThanTodayException, RideAlreadyExistException;
 	
 	
 	/**
