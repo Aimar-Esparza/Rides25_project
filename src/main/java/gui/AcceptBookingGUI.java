@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Vector;
-
+//Proba berria
 public class AcceptBookingGUI extends JFrame {
     private JTable tableRides;
     private DefaultTableModel tableModelRides;

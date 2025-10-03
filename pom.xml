@@ -51,7 +51,7 @@
 		<sonar.organization>aimar-esparza</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.projectKey>aimar-esparza_rides24</sonar.projectKey>
-		<sonar.login>70f07ca9e92806a3a5e04e9cc7254d953f5f9bc5</sonar.login>
+		<sonar.login>531744b2c2392c0639ddc3c6bebff1af3517fd9d</sonar.login>
 	</properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
