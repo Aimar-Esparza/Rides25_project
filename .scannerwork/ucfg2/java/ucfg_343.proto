@@ -1,0 +1,41 @@
+
+domain.Car#hashCode()IB
+8C:/Users/Aimar/git/Rides24/src/main/java/domain/Car.javaN N("1*ô
+1O	 O(_
+]
+O O(
+%0domain.Driver"__id*6
+
+__unknown_file (*
+
+domain.Car"
+driverg
+e
+O O()
+%1java.lang.String"__id*;
+
+__unknown_file (*
+
+domain.Car"
+numberPlate†
+ƒ
+O	 O(3	
+%2int",java.util.Objects#hash([Ljava/lang/Object;)I*1
+
+__unknown_file ("
+java.util.Objects*1
+
+__unknown_file (
+
+%0domain.Driver*4
+
+__unknown_file (
+
+%1java.lang.String*"
+
+__unknown_file (
+"""
+O O(4
+""B
+
+domain.CarHX

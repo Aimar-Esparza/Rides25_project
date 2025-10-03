@@ -1,0 +1,95 @@
+
+]businessLogic.BLFacadeImplementation#getDestinationCities(Ljava/lang/String;)Ljava/util/List;^
+RC:/Users/Aimar/git/Rides24/src/main/java/businessLogic/BLFacadeImplementation.java∂  ∂(4"startingBlock*É
+startingBlock
+∂4 ∂(AÑ
+Å
+
+∂ ∂(
+%6"
+__annotate*)
+
+__unknown_file (
+	WebMethod*6
+
+__unknown_file (
+
+fromjava.lang.StringZ
+X
+
+∂< ∂(@
+fromjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%6*
+1*“
+1
+∑ ∑(á
+Ñ
+
+∑ ∑(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+
+∑ ∑(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()á
+Ñ
+
+π π(&
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManageräá
+
+π π(=
+%3java.util.List"JdataAccess.DataAccess#getArrivalCities(Ljava/lang/String;)Ljava/util/List;*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess*6
+
+__unknown_file (
+
+fromjava.lang.String2$getArrivalCities(Ljava/lang/String;)h
+f
+
+π π(>
+targetCitiesjava.util.List"__id*2
+
+__unknown_file (
+
+%3java.util.Listá
+Ñ
+
+ª ª(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager~|
+
+ª ª(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()".
+
+Ω Ω( 
+
+targetCitiesjava.util.List:&
+
+∂5 ∂(@
+fromjava.lang.StringB(&
+$businessLogic.BLFacadeImplementationH

@@ -1,0 +1,104 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-09-28 18:55:04 #1 store] 
+Database 'C:\Users\Aimar\git\Rides24\src\main\resources\rides.temp' is opened by 1392@Aimar-PC
+
+[2025-09-28 18:55:05 #2 type.registry] 
+New type domain.User
+
+[2025-09-28 18:55:05 #3 type.registry] 
+New type domain.Admin
+
+[2025-09-28 18:55:05 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-09-28 18:55:05 #5 type.registry] 
+New type domain.Ride
+
+[2025-09-28 18:55:05 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-09-28 18:55:05 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-09-28 18:55:05 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-09-28 18:55:05 #9 type.registry] 
+New type domain.Booking
+
+[2025-09-28 18:55:05 #10 type.registry] 
+New type domain.Car
+
+[2025-09-28 18:55:05 #11 type.registry] 
+New type domain.Driver
+
+[2025-09-28 18:55:05 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-09-28 18:55:05 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-09-28 18:55:05 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-09-28 18:55:05 #15 type.registry] 
+New type domain.Valoration
+
+[2025-09-28 18:55:05 #16 type.registry] 
+New type domain.Passenger
+
+[2025-09-28 18:55:05 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-09-28 18:55:05 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-09-28 18:55:05 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-09-28 18:55:05 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-09-28 18:55:05 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-09-28 18:55:05 #22 type.registry] 
+New type domain.Notification
+
+[2025-09-28 18:55:05 #23 type.registry] 
+New type domain.Request
+
+[2025-09-28 18:55:05 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-09-28 18:55:05 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-09-28 18:55:05 #26 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-09-28 18:55:05 #27 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-09-28 18:55:05 #28 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-09-28 18:55:05 #29 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-09-28 18:55:05 #30 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-09-28 18:55:05 #31 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-09-28 18:55:05 #32 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-09-28 18:55:05 #33 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-09-28 18:55:05 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+

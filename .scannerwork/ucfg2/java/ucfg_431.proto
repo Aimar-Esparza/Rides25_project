@@ -1,0 +1,72 @@
+
+0domain.Notification#toString()Ljava/lang/String;K
+AC:/Users/Aimar/git/Rides24/src/main/java/domain/Notification.javaM M("1*√	
+1N N("g
+e
+N N(+
+%0java.lang.String"__concat*#
+N N("
+Notification.Reason*
+N% N(+
+""_
+]
+N N(,
+rjava.lang.String"__id*4
+
+__unknown_file (
+
+%0java.lang.String‰
+·
+O	 O(.
+%1java.util.ResourceBundle"Pjava.util.ResourceBundle#getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;*8
+
+__unknown_file ("
+java.util.ResourceBundle*)
+
+__unknown_file (
+	EtiquetasÅ˛
+O	 O(;
+%2java.lang.String"Hjava.util.ResourceBundle#getString(Ljava/lang/String;)Ljava/lang/String;*<
+
+__unknown_file ( 
+
+%1java.util.ResourceBundle*3
+
+__unknown_file (
+
+rjava.lang.String2getString(Ljava/lang/String;)h
+f
+O	 O(B
+%3java.lang.String"__concat*$
+O	 O(;
+
+%2java.lang.String*
+O> O(B
+ |d
+b
+OE O(I
+%4domain.Ride"__id*=
+
+__unknown_file (!*
+domain.Notification"
+rideåâ
+OE O(T
+%5java.lang.String"(domain.Ride#toString()Ljava/lang/String;*/
+
+__unknown_file (
+
+%4domain.Ride2
+toString()z
+x
+O	 O(T
+%6java.lang.String"__concat*$
+O	 O(B
+
+%3java.lang.String*$
+OE O(T
+
+%5java.lang.String"$
+O O(U
+
+%6java.lang.StringB
+domain.NotificationH

@@ -55,6 +55,7 @@ public class Ride implements Serializable {
 		this.date=date;
 		this.price=price;
 		this.driver = driver;
+		this.car = car;
 		this.done = false;
 	}
 

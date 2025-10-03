@@ -117,17 +117,19 @@ public class DataAccess  {
 			driver3.addCar(car5);
 			
 			//Create rides
-			driver1.addRide("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7, car1);
-			driver1.addRide("Donostia", "Gazteiz", UtilDate.newDate(year,month,6), 4, 8, car2);
-			driver1.addRide("Bilbo", "Donostia", UtilDate.newDate(year,month,25), 4, 4, car2);
+			String don = "Donostia";
+			String bil = "Bilbo";
+			driver1.addRide(don, bil, UtilDate.newDate(year,month,15), 4, 7, car1);
+			driver1.addRide(don, "Gazteiz", UtilDate.newDate(year,month,6), 4, 8, car2);
+			driver1.addRide(bil, don, UtilDate.newDate(year,month,25), 4, 4, car2);
 
-			driver1.addRide("Donostia", "Iruña", UtilDate.newDate(year,month,7), 4, 8, car1);
+			driver1.addRide(don, "Iruña", UtilDate.newDate(year,month,7), 4, 8, car1);
 			
-			driver1.addRide("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 3, 3, car2);
-			driver1.addRide("Bilbo", "Donostia", UtilDate.newDate(year,month,25), 2, 5, car1);
+			driver1.addRide(don, bil, UtilDate.newDate(year,month,15), 3, 3, car2);
+			driver1.addRide(bil, don, UtilDate.newDate(year,month,25), 2, 5, car1);
 			driver1.addRide("Eibar", "Gasteiz", UtilDate.newDate(year,month,6), 2, 5, car1);
 			
-			driver1.addRide("Bilbo", "Donostia", UtilDate.newDate(year,month,14), 1, 3, car5);
+			driver1.addRide(bil, don, UtilDate.newDate(year,month,14), 1, 3, car5);
 					
 			db.persist(admin);
 			db.persist(driver1);
@@ -552,10 +554,10 @@ public class DataAccess  {
 	} 
 	
 	 
-	public void createRequest(String email, String or, String de, int val, int kant, Date ride_date, boolean autoBuy) {
+	public void createRequest(String email, String or, String de, int val, int kant, Date ridedate, boolean autoBuy) {
 		db.getTransaction().begin();
 		Passenger p = db.find(Passenger.class, email);
-		Request request = new Request( p,  or,  de, val, kant, ride_date, new Date(), autoBuy);
+		Request request = new Request( p,  or,  de, val, kant, ridedate, new Date(), autoBuy);
 		db.persist(request);
 		p.addRequest(request);
 		db.getTransaction().commit();
@@ -693,14 +695,14 @@ public class DataAccess  {
 	}
 	
 	public void removeCar(String matricula) {
-		Car c = db.find(Car.class, matricula);
-		while( c.getRides().size()>0) {
-			removeRide(c.getRides().get(0).getRideNumber());
+		Car car = db.find(Car.class, matricula);
+		while( car.getRides().size()>0) {
+			removeRide(car.getRides().get(0).getRideNumber());
 		}
 		db.getTransaction().begin();
-		Driver d = db.find(Driver.class, c.getDriver().getEmail());
-		d.removeCar(c);
-		db.remove(c);
+		Driver d = db.find(Driver.class, car.getDriver().getEmail());
+		d.removeCar(car);
+		db.remove(car);
 		db.getTransaction().commit();
 	}
 	

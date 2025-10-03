@@ -1,0 +1,56 @@
+
+(domain.User#toString()Ljava/lang/String;C
+9C:/Users/Aimar/git/Rides24/src/main/java/domain/User.javaY Y("1*¶
+1Z	 Z(b
+`
+Z	 Z(
+%0java.lang.String"__id*6
+
+__unknown_file (*
+domain.User"
+emailg
+e
+Z	 Z(
+%1java.lang.String"__concat*$
+Z	 Z(
+
+%0java.lang.String*
+Z Z(
+;e
+c
+Z Z(
+%2java.lang.String"__id*9
+
+__unknown_file (*
+domain.User"
+
+usernamez
+x
+Z	 Z(
+%3java.lang.String"__concat*$
+Z	 Z(
+
+%1java.lang.String*$
+Z Z(
+
+%2java.lang.Stringg
+e
+Z	 Z(
+%4java.lang.String"__concat*$
+Z	 Z(
+
+%3java.lang.String*
+Z Z(
+;h
+f
+Z	 Z(%
+%5java.lang.String"__concat*$
+Z	 Z(
+
+%4java.lang.String*
+Z  Z(%
+"""$
+Z Z(&
+
+%5java.lang.StringB
+domain.UserH

@@ -21,7 +21,7 @@ public class Valoration implements Serializable {
 	@XmlJavaTypeAdapter(IntegerAdapter.class)
 	@XmlID
 	private Integer bookingId;
-	private int valoration;
+	private int score;
 	private String comment;
 	private Boolean done;
 	private Booking book;
@@ -31,7 +31,7 @@ public class Valoration implements Serializable {
 	}
 	
 	public Valoration(Booking book, boolean done, int val, String comment) {
-		this.valoration = val;
+		this.score = val;
 		this.done = done;
 		this.comment = comment;
 		this.book = book;
@@ -46,11 +46,11 @@ public class Valoration implements Serializable {
 	}
 
 	public int getValoration() {
-		return valoration;
+		return score;
 	}
 
 	public void setValoration(int valoration) {
-		this.valoration = valoration;
+		this.score = valoration;
 	}
 
 	public String getComment() {
@@ -78,7 +78,7 @@ public class Valoration implements Serializable {
 	}
 
 	public String toString(){
-		return done + " " + valoration + " " + comment;  
+		return done + " " + score + " " + comment;  
 	}
 	
 	

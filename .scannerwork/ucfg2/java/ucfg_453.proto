@@ -1,0 +1,79 @@
+
++domain.Booking#toString()Ljava/lang/String;F
+<C:/Users/Aimar/git/Rides24/src/main/java/domain/Booking.java~ ~("1*‘
+1	 (j
+h
+	 (
+%0java.lang.Integer"__id*=
+
+__unknown_file (!*
+domain.Booking"
+	bookingIdh
+f
+	 (
+%1java.lang.String"__concat*%
+	 (
+
+%0java.lang.Integer*
+ (
+;g
+e
+	 (
+%2java.lang.String"__concat*$
+	 (
+
+%1java.lang.String*
+ (
+;i
+g
+ ($
+%3domain.Passenger"__id*=
+
+__unknown_file (!*
+domain.Booking"
+	passengerz
+x
+	 ($
+%4java.lang.String"__concat*$
+	 (
+
+%2java.lang.String*$
+ ($
+
+%3domain.Passengerg
+e
+	 ((
+%5java.lang.String"__concat*$
+	 ($
+
+%4java.lang.String*
+% ((
+;g
+e
+) (/
+%6java.lang.Boolean"__id*:
+
+__unknown_file (*
+domain.Booking"
+status{
+y
+	 (/
+%7java.lang.String"__concat*$
+	 ((
+
+%5java.lang.String*%
+) (/
+
+%6java.lang.Booleang
+e
+	 (3
+%8java.lang.String"__concat*$
+	 (/
+
+%7java.lang.String*
+0 (3
+;"$
+ (4
+
+%8java.lang.StringB
+domain.BookingH

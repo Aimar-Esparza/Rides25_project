@@ -1,0 +1,44 @@
+
+$gui.ValorationGUI#%field_initializer
+__unknown_file ("1*Ç
+1 (˜•
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java( (D&
+%0 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel¶
+³
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java$ (F
+%1"*javax.swing.DefaultComboBoxModel#<init>()V*4
+ ((
+&
+%0 javax.swing.DefaultComboBoxModel¨
+¥
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java (G
+gui.ValorationGUI"
+val"__id*4
+ ((
+&
+%0 javax.swing.DefaultComboBoxModel†ƒ
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java!- !(8
+%2javax.swing.ButtonGroup"javax.swing.ButtonGroup¤
+¡
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java!) !(:
+%3"!javax.swing.ButtonGroup#<init>()V*+
+ (
+
+%2javax.swing.ButtonGroup§
+¤
+I
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java! !(;$
+gui.ValorationGUI"
+buttonGroup"__id*+
+ (
+
+%2javax.swing.ButtonGroup"_
+H
+?C:/Users/Aimar/git/Rides24/src/main/java/gui/ValorationGUI.java •(
+implicit returnB
+gui.ValorationGUI

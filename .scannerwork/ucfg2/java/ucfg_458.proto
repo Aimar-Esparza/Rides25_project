@@ -1,0 +1,26 @@
+
+8domain.Passenger#hasNotification(Ldomain/Notification;)ZH
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java0 0("1*ç
+11	 1(m
+k
+1	 1(
+%0java.util.List"__id*C
+
+__unknown_file ('*%
+domain.Passenger"
+notificationsÔÑ
+1	 1('
+%1boolean",java.util.List#contains(Ljava/lang/Object;)Z*2
+
+__unknown_file (
+
+%0java.util.List*6
+
+__unknown_file (
+
+ndomain.Notification2contains(Ljava/lang/Object;)"
+1 1((
+"":$
+0  0(.
+ndomain.NotificationB
+domain.PassengerHX

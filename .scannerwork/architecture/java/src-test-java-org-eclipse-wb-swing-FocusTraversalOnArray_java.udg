@@ -1,0 +1,259 @@
+
+1.0aimar-esparza_rides24JavaFrontend"1759487403828*java2.Bè
+B
+=src/test/java/org/eclipse/wb/swing/FocusTraversalOnArray.java2
+	
+type3
+	
+MAIN4
+
+package6
+
+org.eclipse.wb.swing7
+/
+*org.eclipse.wb.swing.FocusTraversalOnArray9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+FocusTraversalOnArray14
+=
+7org.eclipse.wb.swing.FocusTraversalOnArray.m_Components16
+
+field17
+
+private18
+
+m_Components19
+O
+Iorg.eclipse.wb.swing.FocusTraversalOnArray#<init>([Ljava/awt/Component;)V21
+
+method22
+
+calls23
+
+
+references24
+@
+:org.eclipse.wb.swing.FocusTraversalOnArray#indexCycle(II)I26
+
+
+indexCycle27
+a
+[org.eclipse.wb.swing.FocusTraversalOnArray#cycle(Ljava/awt/Component;I)Ljava/awt/Component;29
+
+cycle30
+Ä
+zorg.eclipse.wb.swing.FocusTraversalOnArray#getComponentAfter(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;32
+
+getComponentAfter33
+Å
+{org.eclipse.wb.swing.FocusTraversalOnArray#getComponentBefore(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;35
+
+getComponentBefore36
+l
+forg.eclipse.wb.swing.FocusTraversalOnArray#getFirstComponent(Ljava/awt/Container;)Ljava/awt/Component;38
+
+getFirstComponent39
+k
+eorg.eclipse.wb.swing.FocusTraversalOnArray#getLastComponent(Ljava/awt/Container;)Ljava/awt/Component;41
+
+getLastComponent42
+n
+horg.eclipse.wb.swing.FocusTraversalOnArray#getDefaultComponent(Ljava/awt/Container;)Ljava/awt/Component;44
+
+getDefaultComponent45J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jò
+A
+25;
+252622 *
+1' '(	28:5B
+
+
+11
+18
+
+
+13
+27
+A
+20;
+202122 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+14
+A
+28;
+282922 *
+1, ,(	28:5B
+
+
+11
+18
+
+
+13
+30
+A
+37;
+373822 *
+1S S(28:5B
+
+
+11
+12
+
+
+13
+39
+A
+43;
+434422 *
+1Y Y(28:5B
+
+
+11
+12
+
+
+13
+45
+A
+15;
+151617 *
+1 (	28:5B
+
+
+11
+18
+
+
+13
+19
+A
+31;
+313222 *
+1M M(28:5B
+
+
+11
+12
+
+
+13
+33
+A
+34;
+343522 *
+1P P(28:5B
+
+
+11
+12
+
+
+13
+36
+A
+40;
+404122 *
+1V V(28:5B
+
+
+11
+12
+
+
+13
+42
+;
+86
+8910 *
+1 (#:5B
+
+
+11
+12
+
+
+13
+14r∆
+
+20823*
+1	 (
+
+201524*
+1   (
+
+251524*
+1( ((
+
+281524*
+1. .(*
+
+281524*
+1/ /(&
+
+28824*
+1: :(
+
+282523*
+1: :(
+
+281524*
+1@ @(&
+
+31824*
+1N
+ N(
+
+312823*
+1N
+ N(
+
+34824*
+1Q
+ Q(
+
+342823*
+1Q
+ Q(
+
+371524*
+1T
+ T(
+
+401524*
+1W
+ W(
+
+401524*
+1W W(#
+
+43824*
+1Z
+ Z(
+
+433723*
+1Z
+ Z(

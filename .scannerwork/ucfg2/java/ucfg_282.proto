@@ -1,0 +1,106 @@
+
+]businessLogic.BLFacadeImplementation#login(Ljava/lang/String;Ljava/lang/String;)Ldomain/User;\
+RC:/Users/Aimar/git/Rides24/src/main/java/businessLogic/BLFacadeImplementation.java) )( "startingBlock*æ
+startingBlock)  )(?ƒ
+€
+) )(
+%6"
+__annotate*)
+
+__unknown_file (
+	WebMethod*7
+
+__unknown_file (
+
+emailjava.lang.StringY
+W
+)( )(-
+emailjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%6†
+ƒ
+) )(
+%7"
+__annotate*)
+
+__unknown_file (
+	WebMethod*:
+
+__unknown_file (
+
+passwordjava.lang.String\
+Z
+)6 )(>
+passwordjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%7*
+1*è
+1* *(…
+‚
+* *(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerzx
+* *(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()…
+‚
++ +(
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerÍÊ
++ +(.
+%3domain.User"NdataAccess.DataAccess#login(Ljava/lang/String;Ljava/lang/String;)Ldomain/User;*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess*7
+
+__unknown_file (
+
+emailjava.lang.String*:
+
+__unknown_file (
+
+passwordjava.lang.String2+login(Ljava/lang/String;Ljava/lang/String;)V
+T
++ +(/
+usdomain.User"__id*/
+
+__unknown_file (
+
+%3domain.User…
+‚
+, ,(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+, ,(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()"
+- -(
+
+usdomain.User:%
+)! )(.
+emailjava.lang.String:(
+)/ )(>
+passwordjava.lang.StringB(&
+$businessLogic.BLFacadeImplementationH

@@ -1,0 +1,39 @@
+
+/domain.Reclamation#toString()Ljava/lang/String;J
+@C:/Users/Aimar/git/Rides24/src/main/java/domain/Reclamation.javaR R("1*ë
+1S	 S(f
+d
+S	 S(
+%0domain.Booking"__id*<
+
+__unknown_file ( *
+domain.Reclamation"
+booke
+c
+S	 S(
+%1java.lang.String"__concat*"
+S	 S(
+
+%0domain.Booking*
+S S(
+ k
+i
+S S(
+%2java.lang.String"__id*?
+
+__unknown_file (#*!
+domain.Reclamation"	
+commentz
+x
+S	 S(
+%3java.lang.String"__concat*$
+S	 S(
+
+%1java.lang.String*$
+S S(
+
+%2java.lang.String"$
+S S(
+
+%3java.lang.StringB
+domain.ReclamationH

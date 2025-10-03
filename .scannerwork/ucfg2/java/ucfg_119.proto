@@ -1,0 +1,53 @@
+
+*domain.Driver#toString()Ljava/lang/String;E
+;C:/Users/Aimar/git/Rides24/src/main/java/domain/Driver.javaO O("1*Ú
+1P	 P(r
+p
+P	 P(
+%0java.lang.String"(domain.User#getEmail()Ljava/lang/String;*"
+
+__unknown_file (
+""i
+g
+P	 P(!
+%1java.lang.String"__concat*$
+P	 P(
+
+%0java.lang.String*
+P P(!
+ ; u
+s
+P$ P(7
+%2java.lang.String"+domain.User#getUsername()Ljava/lang/String;*"
+
+__unknown_file (
+""z
+x
+P	 P(7
+%3java.lang.String"__concat*$
+P	 P(!
+
+%1java.lang.String*$
+P$ P(7
+
+%2java.lang.Stringi
+g
+P	 P(?
+%4java.lang.String"__concat*$
+P	 P(7
+
+%3java.lang.String*
+P: P(?
+ ; h
+f
+P	 P(E
+%5java.lang.String"__concat*$
+P	 P(?
+
+%4java.lang.String*
+PB P(E
+"""$
+P P(F
+
+%5java.lang.StringB
+domain.DriverH

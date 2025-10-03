@@ -1,0 +1,154 @@
+
+&domain.Car#equals(Ljava/lang/Object;)ZB
+8C:/Users/Aimar/git/Rides24/src/main/java/domain/Car.javaS S("startingBlock*v
+2[; [(Bb
+`
+[; [(S
+%8boolean"	__compare*
+[C [(E
+==*
+[; [(B
+""*
+[F [(S
+""*
+1*Í
+3Z Z(^
+\
+Z Z(
+other
+domain.Car"__id*5
+
+__unknown_file (
+
+objjava.lang.Objectg
+e
+[ [(#
+%5java.lang.String"__id*;
+
+__unknown_file (*
+
+domain.Car"
+numberPlaten
+l
+[% [(6
+%6java.lang.String"__id*B
+
+__unknown_file (&*$
+
+other
+domain.Car"
+numberPlateü
+ù
+[	 [(7
+%7boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*4
+
+__unknown_file (
+
+%5java.lang.String*4
+
+__unknown_file (
+
+%6java.lang.String*
+2
+1*„
+startingBlockS S("Š
+‡
+R R(
+
+%9"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*5
+
+__unknown_file (
+
+objjava.lang.ObjectW
+U
+S S(!
+objjava.lang.Object"__annotation*"
+
+__unknown_file (
+
+%9*
+9*!
+4Y
+ Y("
+Y Y(
+""*Â
+5X X(Š‡
+X X(
+%2java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;**
+
+__unknown_file (
+
+domain.Car2
+getClass()•’
+X X("
+%3java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*5
+
+__unknown_file (
+
+objjava.lang.Object2
+getClass()…
+‚
+X X("
+%4boolean"	__compare*
+X X(
+!=*#
+X X(
+
+%2java.lang.Class*#
+X X("
+
+%3java.lang.Class*
+3
+4*!
+6W
+ W("
+W W(
+""*Œ
+7V V(	u
+s
+V V(
+%1boolean"	__compare*
+V
+ V(
+==*%
+V V(	
+
+objjava.lang.Object*
+V V(
+""*
+5
+6*!
+8U
+ U("
+U U(
+""*”
+9T T(
+}
+{
+T T(
+%0boolean"	__compare*
+T T(
+==*
+T T(
+
+
+domain.Car*%
+T T(
+
+objjava.lang.Object*
+7
+8*!
+1[ [(T"
+[ [(T
+"":#
+S S(!
+objjava.lang.ObjectB
+
+domain.CarHX

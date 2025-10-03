@@ -1,0 +1,65 @@
+
+MbusinessLogic.BLFacadeImplementation#getNextReclamation()Ldomain/Reclamation;^
+RC:/Users/Aimar/git/Rides24/src/main/java/businessLogic/BLFacadeImplementation.javaô" ô(4"1*¯
+1
+ö ö(á
+Ñ
+
+ö ö(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+
+ö ö(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()á
+Ñ
+
+õ õ(
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager∫∑
+
+õ õ(3
+%3domain.Reclamation">dataAccess.DataAccess#getNextReclamation()Ldomain/Reclamation;*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess2getNextReclamation()e
+c
+
+õ õ(4
+rdomain.Reclamation"__id*6
+
+__unknown_file (
+
+%3domain.Reclamationá
+Ñ
+
+ú ú(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager~|
+
+ú ú(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()"'
+
+ù ù(
+
+rdomain.ReclamationB(&
+$businessLogic.BLFacadeImplementationH

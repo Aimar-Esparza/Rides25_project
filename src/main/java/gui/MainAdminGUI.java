@@ -46,10 +46,10 @@ public class MainAdminGUI extends JFrame {
 	
 	protected JLabel jLabelSelectOption;
 	private JRadioButton rdbtnNewRadioButton;
-	private JRadioButton rdbtnNewRadioButton_1;
-	private JRadioButton rdbtnNewRadioButton_2;
+	private JRadioButton rdbtnNewRadioButton1;
+	private JRadioButton rdbtnNewRadioButton2;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
-	private JButton jButtonTransaction_2;
+	private JButton jButtonTransaction2;
 	
 	/**
 	 * This is the default constructor
@@ -82,30 +82,30 @@ public class MainAdminGUI extends JFrame {
 		});
 		buttonGroup.add(rdbtnNewRadioButton);
 		
-		rdbtnNewRadioButton_1 = new JRadioButton("Euskara");
-		rdbtnNewRadioButton_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		rdbtnNewRadioButton_1.setLocation(128, 400);
-		rdbtnNewRadioButton_1.setSize(160, 40);
-		rdbtnNewRadioButton_1.addActionListener(new ActionListener() {
+		rdbtnNewRadioButton1 = new JRadioButton("Euskara");
+		rdbtnNewRadioButton1.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		rdbtnNewRadioButton1.setLocation(128, 400);
+		rdbtnNewRadioButton1.setSize(160, 40);
+		rdbtnNewRadioButton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Locale.setDefault(new Locale("eus"));
 				System.out.println("Locale: "+Locale.getDefault());
 				paintAgain();				}
 		});
-		buttonGroup.add(rdbtnNewRadioButton_1);
+		buttonGroup.add(rdbtnNewRadioButton1);
 		
-		rdbtnNewRadioButton_2 = new JRadioButton("Castellano");
-		rdbtnNewRadioButton_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		rdbtnNewRadioButton_2.setLocation(288, 400);
-		rdbtnNewRadioButton_2.setSize(170, 40);
-		rdbtnNewRadioButton_2.addActionListener(new ActionListener() {
+		rdbtnNewRadioButton2 = new JRadioButton("Castellano");
+		rdbtnNewRadioButton2.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		rdbtnNewRadioButton2.setLocation(288, 400);
+		rdbtnNewRadioButton2.setSize(170, 40);
+		rdbtnNewRadioButton2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Locale.setDefault(new Locale("es"));
 				System.out.println("Locale: "+Locale.getDefault());
 				paintAgain();
 			}
 		});
-		buttonGroup.add(rdbtnNewRadioButton_2);
+		buttonGroup.add(rdbtnNewRadioButton2);
 		
 		jButtonReclamation = new JButton();
 		jButtonReclamation.setBounds(210, 121, 270, 94);
@@ -136,8 +136,8 @@ public class MainAdminGUI extends JFrame {
 		jContentPane.add(jButtonReclamation);
 		jContentPane.add(jButtonLogOut);
 		jContentPane.add(rdbtnNewRadioButton);
-		jContentPane.add(rdbtnNewRadioButton_1);
-		jContentPane.add(rdbtnNewRadioButton_2);
+		jContentPane.add(rdbtnNewRadioButton1);
+		jContentPane.add(rdbtnNewRadioButton2);
 		
 		setContentPane(jContentPane);
 		
@@ -153,7 +153,7 @@ public class MainAdminGUI extends JFrame {
 		jButtonReclamation.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.QueryRides"));
 		jButtonLogOut.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.LogOut"));
 		lblNotifications.setText(MainDriverGUI.getBusinessLogic().generateNotification(admin.getEmail()) +" "+ ResourceBundle.getBundle("Etiquetas").getString("MainGUI.HaveNotifications"));
-		jButtonTransaction_2.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.CreateRequest"));
+		jButtonTransaction2.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.CreateRequest"));
 		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.MainTitle")+ " - passenger :"+admin.getUsername());
 	}
 } // @jve:decl-index=0:visual-constraint="0,0"

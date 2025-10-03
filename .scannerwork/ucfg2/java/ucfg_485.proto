@@ -1,0 +1,21 @@
+
+)domain.Reclamation#getRide()Ldomain/Ride;J
+@C:/Users/Aimar/git/Rides24/src/main/java/domain/Reclamation.javaF F("1*Ÿ
+1G	 G(f
+d
+G	 G(
+%0domain.Booking"__id*<
+
+__unknown_file ( *
+domain.Reclamation"
+book†ƒ
+G	 G(
+%1domain.Ride"%domain.Booking#getRide()Ldomain/Ride;*2
+
+__unknown_file (
+
+%0domain.Booking2	getRide()"
+G G(
+
+%1domain.RideB
+domain.ReclamationH

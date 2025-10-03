@@ -1,0 +1,80 @@
+
+?businessLogic.BLFacadeImplementation#book(ILjava/lang/String;)Z\
+RC:/Users/Aimar/git/Rides24/src/main/java/businessLogic/BLFacadeImplementation.java= =(""startingBlock*ˇ
+startingBlock=" =(@É
+Ä
+= =(
+%6"
+__annotate*)
+
+__unknown_file (
+	WebMethod*7
+
+__unknown_file (
+
+emailjava.lang.StringY
+W
+=: =(?
+emailjava.lang.String"__annotation*"
+
+__unknown_file (
+
+%6*
+1*∑
+1> >(Ö
+Ç
+> >(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerzx
+> >(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()Ö
+Ç
+? ?(
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerÅ˛
+? ?(4
+%3boolean"0dataAccess.DataAccess#book(ILjava/lang/String;)Z*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess*"
+
+__unknown_file (
+""*7
+
+__unknown_file (
+
+emailjava.lang.String2book(ILjava/lang/String;)Ö
+Ç
+@ @(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+@ @(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()"
+A A(
+"": 
+
+__unknown_file (
+"":%
+=3 =(?
+emailjava.lang.StringB(&
+$businessLogic.BLFacadeImplementationHX

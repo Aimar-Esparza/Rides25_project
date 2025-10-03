@@ -1,0 +1,322 @@
+
+'domain.Ride#equals(Ljava/lang/Object;)ZE
+9C:/Users/Aimar/git/Rides24/src/main/java/domain/Ride.javaù ù("startingBlock*™
+13
+ü ü(	}
+{
+
+ü ü(
+%1boolean"	__compare*
+
+ü
+ ü(
+==*'
+
+ü ü(	
+
+objjava.lang.Object*
+
+ü ü(
+""*
+11
+12*&
+14
+û
+ û("
+
+û û(
+""*¤
+15
+ú ú(
+‡
+„
+
+ú ú(
+%0boolean"	__compare*
+
+ú ú(
+==*
+
+ú ú(
+
+domain.Ride*'
+
+ú ú(
+
+objjava.lang.Object*
+13
+14*%
+1
+ ƒ($"
+
+ ƒ($
+""*ç
+2
+ƒ ƒ(b
+`
+
+ƒ ƒ(
+%17java.lang.String"__id*3
+
+__unknown_file (*
+domain.Ride"
+toi
+g
+
+ƒ ƒ("
+%18java.lang.String"__id*:
+
+__unknown_file (*
+
+otherdomain.Ride"
+to
+ş
+
+ƒ ƒ(#
+%19boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*5
+
+__unknown_file (
+
+%17java.lang.String*5
+
+__unknown_file (
+
+%18java.lang.String*
+1*
+startingBlock
+ù ù("
+Š
+
+ø ø(
+
+%20"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*5
+
+__unknown_file (
+
+objjava.lang.ObjectZ
+X
+
+ù ù(!
+objjava.lang.Object"__annotation*#
+
+__unknown_file (
+
+%20*
+15*ş
+4
+‚+ ‚(2k
+i
+
+‚: ‚(D
+%14java.lang.Integer"__id*;
+
+__unknown_file (*
+domain.Ride"
+
+rideNumberr
+p
+
+‚F ‚(V
+%15java.lang.Integer"__id*B
+
+__unknown_file (&*$
+
+otherdomain.Ride"
+
+rideNumberƒ
+€
+
+‚+ ‚(W
+%16boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*6
+
+__unknown_file (
+
+%14java.lang.Integer*6
+
+__unknown_file (
+
+%15java.lang.Integer*
+2
+1*ñ
+6
+‚ ‚(d
+b
+
+‚ ‚(
+%11java.lang.String"__id*5
+
+__unknown_file (*
+domain.Ride"
+fromk
+i
+
+‚ ‚(&
+%12java.lang.String"__id*<
+
+__unknown_file ( *
+
+otherdomain.Ride"
+from
+ş
+
+‚ ‚('
+%13boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*5
+
+__unknown_file (
+
+%11java.lang.String*5
+
+__unknown_file (
+
+%12java.lang.String*	
+2
+4
+1*è
+8
+- (4b
+`
+
+< (B
+%8domain.Driver"__id*7
+
+__unknown_file (*
+domain.Ride"
+driveri
+g
+
+D (P
+%9domain.Driver"__id*>
+
+__unknown_file ("* 
+
+otherdomain.Ride"
+driverù
+ö
+
+- (Q
+%10boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*1
+
+__unknown_file (
+
+%8domain.Driver*1
+
+__unknown_file (
+
+%9domain.Driver*
+2
+4
+6
+1*Í
+9
+€ €(a
+_
+
+€ €(
+otherdomain.Ride"__id*5
+
+__unknown_file (
+
+objjava.lang.Objecta
+_
+
+ (
+%5java.util.Date"__id*5
+
+__unknown_file (*
+domain.Ride"
+dateh
+f
+
+ ((
+%6java.util.Date"__id*<
+
+__unknown_file ( *
+
+otherdomain.Ride"
+dateú
+÷
+
+	 ()
+%7boolean"?java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z*1
+
+__unknown_file ("
+java.util.Objects*2
+
+__unknown_file (
+
+%5java.util.Date*2
+
+__unknown_file (
+
+%6java.util.Date*
+2
+4
+6
+8
+1*&
+10
+ÿ
+ ÿ("
+
+ÿ ÿ(
+""*Ó
+11
+ş ş(Š
+
+ş ş(
+%2java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*+
+
+__unknown_file (
+domain.Ride2
+getClass()—”
+
+ş ş("
+%3java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*5
+
+__unknown_file (
+
+objjava.lang.Object2
+getClass()
+Š
+
+ş ş("
+%4boolean"	__compare*
+
+ş ş(
+!=*%
+
+ş ş(
+
+%2java.lang.Class*%
+
+ş ş("
+
+%3java.lang.Class*
+9
+10*&
+12
+ı
+ ı("
+
+ı ı(
+"":%
+
+ù ù(!
+objjava.lang.ObjectB
+domain.RideHX

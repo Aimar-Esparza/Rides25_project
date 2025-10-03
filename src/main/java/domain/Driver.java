@@ -121,6 +121,14 @@ public class Driver extends User implements Serializable  {
 		rides.remove(r);
 	}
 	
+	public Ride removeRide(String from, String to, Date date) {
+		for (Ride r:rides)
+			if ( (java.util.Objects.equals(r.getFrom(),from)) && (java.util.Objects.equals(r.getTo(),to)) && (java.util.Objects.equals(r.getDate(),date)) )
+			 return r;
+		
+		return null;
+	}
+	
 	public void removeCar(Car c) {
 		cars.remove(c);
 	}

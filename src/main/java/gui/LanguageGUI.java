@@ -32,7 +32,7 @@ public class LanguageGUI  extends JFrame{
 	public LanguageGUI(int where) {
 		super(); 
 		this.where = where;
-		
+		Locale.setDefault(new Locale("en"));
 		this.setSize(new Dimension(700, 500));
 		this.setTitle(ResourceBundle.getBundle("Etiquetas").getString("LanguajeGUI.MainTitle"));
 		jContentPane = new JPanel();

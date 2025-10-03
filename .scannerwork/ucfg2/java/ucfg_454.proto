@@ -1,0 +1,63 @@
+
+#domain.Passenger#%field_initializer
+__unknown_file ("1*ù
+
+1 (vt
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java# (2
+%0java.util.Vector"java.util.Vector•
+’
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java (4
+%1"java.util.Vector#<init>()V*$
+ (
+
+%0java.util.Vectorš
+—
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java (5
+domain.Passenger"	
+booking"__id*$
+ (
+
+%0java.util.Vectorvt
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java% (4
+%2java.util.Vector"java.util.Vector•
+’
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java! (6
+%3"java.util.Vector#<init>()V*$
+ (
+
+%2java.util.Vectorš
+—
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java (7
+domain.Passenger"	
+request"__id*$
+ (
+
+%2java.util.Vectorvt
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java0 (D
+%4java.util.Vector"java.util.Vector•
+’
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java, (F
+%5"java.util.Vector#<init>()V*$
+ (
+
+%4java.util.Vector 
+
+H
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java (G%
+domain.Passenger"
+notifications"__id*$
+ (
+
+%4java.util.Vector"]
+F
+>C:/Users/Aimar/git/Rides24/src/main/java/domain/Passenger.java _(
+implicit returnB
+domain.Passenger

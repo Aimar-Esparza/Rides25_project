@@ -1,0 +1,44 @@
+
+%gui.ReclamationGUI#%field_initializer
+__unknown_file ("1*Ï
+1 (™–
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java( (D&
+%0 javax.swing.DefaultComboBoxModel" javax.swing.DefaultComboBoxModel·
+´
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java$ (F
+%1"*javax.swing.DefaultComboBoxModel#<init>()V*4
+ ((
+&
+%0 javax.swing.DefaultComboBoxModelª
+§
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java (G
+gui.ReclamationGUI"
+val"__id*4
+ ((
+&
+%0 javax.swing.DefaultComboBoxModel‡„
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java!- !(8
+%2javax.swing.ButtonGroup"javax.swing.ButtonGroup¥
+¢
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java!) !(:
+%3"!javax.swing.ButtonGroup#<init>()V*+
+ (
+
+%2javax.swing.ButtonGroup©
+¦
+J
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java! !(;%
+gui.ReclamationGUI"
+buttonGroup"__id*+
+ (
+
+%2javax.swing.ButtonGroup"_
+H
+@C:/Users/Aimar/git/Rides24/src/main/java/gui/ReclamationGUI.java [(
+implicit returnB
+gui.ReclamationGUI

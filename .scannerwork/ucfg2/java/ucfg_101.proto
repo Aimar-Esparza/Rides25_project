@@ -1,16 +1,15 @@
 
->configuration.ConfigXML#getInstance()Lconfiguration/ConfigXML;S
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.javaé é($"1*˛
-1S
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(´
-®
-S
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(
-%0configuration.ConfigXML"__id*,**
-configuration.ConfigXML"
-theInstance"v
-S
-G/Users/iturrioz/git/Bets2021/src/main/java/configuration/ConfigXML.javaè è(
-
-%0configuration.ConfigXMLB"
-configuration.ConfigXML
+8gui.SignUpGUI#getBusinessLogic()LbusinessLogic/BLFacade;E
+;C:/Users/Aimar/git/Rides24/src/main/java/gui/SignUpGUI.java# #(("1*≤
+1$	 $(w
+u
+$	 $(
+%0businessLogic.BLFacade"__id*E
+
+__unknown_file ()*'
+gui.SignUpGUI"
+appFacadeInterface"*
+$ $(
+
+%0businessLogic.BLFacadeB"
+gui.SignUpGUIH

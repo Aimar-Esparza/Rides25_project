@@ -1,0 +1,82 @@
+
+SbusinessLogic.BLFacadeImplementation#getTransactions(Ldomain/User;)Ljava/util/List;\
+RC:/Users/Aimar/git/Rides24/src/main/java/businessLogic/BLFacadeImplementation.javaQ- Q(<"startingBlock*ñ
+startingBlockQ< Q(G|
+z
+Q Q(
+%6"
+__annotate*)
+
+__unknown_file (
+	WebMethod*1
+
+__unknown_file (
+
+userdomain.UserS
+Q
+QB Q(F
+userdomain.User"__annotation*"
+
+__unknown_file (
+
+%6*
+1*›
+1R R(…
+‚
+R R(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerzx
+R R(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()…
+‚
+S! S(*
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager÷ô
+S! S(@
+%3java.util.List"DdataAccess.DataAccess#getTransactions(Ldomain/User;)Ljava/util/List;*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess*1
+
+__unknown_file (
+
+userdomain.User2getTransactions(Ldomain/User;)\
+Z
+S S(A
+mtjava.util.List"__id*2
+
+__unknown_file (
+
+%3java.util.List…
+‚
+T T(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+T T(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()""
+U U(
+
+mtjava.util.List:
+Q= Q(F
+userdomain.UserB(&
+$businessLogic.BLFacadeImplementationH

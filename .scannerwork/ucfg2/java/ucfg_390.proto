@@ -1,0 +1,80 @@
+
+(domain.Ride#toString()Ljava/lang/String;E
+9C:/Users/Aimar/git/Rides24/src/main/java/domain/Ride.java† †("1*Ç
+1
+‡	 ‡(c
+a
+
+‡	 ‡(
+%0java.lang.String"__id*5
+
+__unknown_file (*
+domain.Ride"
+fromo
+m
+
+‡	 ‡(
+%1java.lang.String"__concat*&
+
+‡	 ‡(
+
+%0java.lang.String*
+
+‡ ‡(
+ > a
+_
+
+‡ ‡(
+%2java.lang.String"__id*3
+
+__unknown_file (*
+domain.Ride"
+to€
+~
+
+‡	 ‡(
+%3java.lang.String"__concat*&
+
+‡	 ‡(
+
+%1java.lang.String*&
+
+‡ ‡(
+
+%2java.lang.Stringo
+m
+
+‡	 ‡("
+%4java.lang.String"__concat*&
+
+‡	 ‡(
+
+%3java.lang.String*
+
+‡ ‡("
+ ; a
+_
+
+‡% ‡()
+%5java.util.Date"__id*5
+
+__unknown_file (*
+domain.Ride"
+date~
+|
+
+‡	 ‡()
+%6java.lang.String"__concat*&
+
+‡	 ‡("
+
+%4java.lang.String*$
+
+‡% ‡()
+
+%5java.util.Date"&
+
+‡ ‡(*
+
+%6java.lang.StringB
+domain.RideH
