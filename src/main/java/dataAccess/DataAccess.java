@@ -198,7 +198,7 @@ public class DataAccess  {
 		//cambio de prueba
 	}
 	
-	private void deleteDriver(String email) {
+	public void deleteDriver(String email) {
 		Driver driver = db.find(Driver.class, email);
 		while (driver.getRides().size() > 0 ) {
 			removeRide(driver.getRides().get(0).getRideNumber());
