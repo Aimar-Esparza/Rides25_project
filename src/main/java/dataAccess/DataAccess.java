@@ -574,12 +574,14 @@ public class DataAccess  {
 	}
 	
 	public Reclamation getNextReclamation() {
-		TypedQuery<Reclamation> query = db.createQuery("SELECT r FROM Reclamation r ORDER BY r.date", Reclamation.class);
-		if(!query.getResultList().isEmpty()) {
-			return query.getResultList().getFirst();
-		}else {
-			return  null;
-		}
+	    TypedQuery<Reclamation> query = db.createQuery("SELECT r FROM Reclamation r ORDER BY r.date", Reclamation.class);
+	    List<Reclamation> reclamations = query.getResultList();
+
+	    if (reclamations != null && !reclamations.isEmpty()) {
+	        return reclamations.get(0);
+	    } else {
+	        return null;
+	    }
 	}
 	
 	public void completeReclamation(int reclamationId, String pemail,String demail, boolean ok) {

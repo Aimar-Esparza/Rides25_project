@@ -1,0 +1,2223 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 00:17:44 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\db\tests.odb' is opened by 13964@LAPTOP-B7RA03NQ
+
+[2025-10-07 00:17:45 #2 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\db\tests.odb' is closed by 13964@LAPTOP-B7RA03NQ
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 11:00:07 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\src\main\resources\rides.temp' is opened by 7536@LAPTOP-B7RA03NQ
+
+[2025-10-07 11:00:07 #2 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #3 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:00:07 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-07 11:00:07 #5 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-07 11:00:07 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-07 11:00:07 #9 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #10 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #11 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-10-07 11:00:07 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-10-07 11:00:07 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #15 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #16 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-10-07 11:00:07 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-07 11:00:07 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-10-07 11:00:07 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-10-07 11:00:07 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-10-07 11:00:07 #22 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #23 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-10-07 11:00:07 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-10-07 11:00:07 #26 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #27 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #28 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #29 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #30 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #31 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #32 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #33 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #34 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #35 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #36 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #37 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #38 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #39 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #40 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #41 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #42 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #43 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #44 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #45 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #46 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #47 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #48 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #49 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #50 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #51 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #52 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #53 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #54 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #55 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #56 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #57 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #58 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #59 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #60 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #61 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #62 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #63 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #64 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #65 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #66 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #67 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #68 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #69 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #70 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #71 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #72 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #73 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #74 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #75 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #76 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #77 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #78 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #79 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #80 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:07 #81 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:07 #82 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:00:07 #83 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:07 #84 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:07 #85 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:07 #86 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:07 #87 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:07 #88 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:07 #89 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:07 #90 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:07 #91 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:07 #92 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #93 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:08 #94 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:08 #95 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:08 #96 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:08 #97 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:08 #98 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #99 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:08 #100 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:08 #101 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:08 #102 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:08 #103 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:08 #104 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:08 #105 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:08 #106 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:08 #107 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:08 #108 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:08 #109 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #110 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:08 #111 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:08 #112 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:08 #113 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:08 #114 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:08 #115 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:08 #116 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:08 #117 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:08 #118 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:08 #119 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:08 #120 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #121 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:08 #122 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:08 #123 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:08 #124 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:08 #125 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:08 #126 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:08 #127 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:08 #128 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:08 #129 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:08 #130 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:08 #131 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #132 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:08 #133 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:08 #134 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:08 #135 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:08 #136 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:00:08 #137 type.registry] 
+New type domain.User
+
+[2025-10-07 11:00:08 #138 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:00:08 #139 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:00:08 #140 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:00:08 #141 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:00:08 #142 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:00:08 #143 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:00:08 #144 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:00:08 #145 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:00:08 #146 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:00:08 #147 type.registry] 
+New type domain.Valoration
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 11:10:14 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\src\main\resources\rides.temp' is opened by 19772@LAPTOP-B7RA03NQ
+
+[2025-10-07 11:10:14 #2 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #3 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:10:14 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-07 11:10:14 #5 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-07 11:10:14 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-07 11:10:14 #9 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #10 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #11 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-10-07 11:10:14 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-10-07 11:10:14 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #15 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #16 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-10-07 11:10:14 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-07 11:10:14 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-10-07 11:10:14 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-10-07 11:10:14 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-10-07 11:10:14 #22 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #23 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-10-07 11:10:14 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-10-07 11:10:14 #26 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #27 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #28 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #29 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #30 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #31 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #32 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #33 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #34 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #35 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #36 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #37 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #38 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #39 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #40 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #41 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #42 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #43 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #44 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #45 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #46 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #47 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #48 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #49 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #50 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #51 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #52 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #53 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #54 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #55 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #56 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #57 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #58 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #59 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #60 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #61 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #62 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #63 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #64 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #65 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #66 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #67 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #68 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #69 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #70 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #71 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #72 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #73 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #74 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #75 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #76 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #77 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #78 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #79 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #80 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #81 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #82 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:10:14 #83 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #84 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #85 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #86 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #87 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #88 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #89 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #90 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #91 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #92 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #93 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #94 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #95 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #96 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #97 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #98 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #99 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #100 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #101 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #102 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #103 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #104 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #105 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #106 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #107 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #108 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #109 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #110 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #111 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #112 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #113 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #114 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #115 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #116 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #117 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #118 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #119 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #120 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #121 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #122 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #123 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #124 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #125 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #126 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #127 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #128 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #129 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #130 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #131 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #132 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #133 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #134 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #135 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #136 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:10:14 #137 type.registry] 
+New type domain.User
+
+[2025-10-07 11:10:14 #138 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:10:14 #139 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:10:14 #140 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:10:14 #141 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:10:14 #142 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:10:14 #143 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:10:14 #144 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:10:14 #145 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:10:14 #146 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:10:14 #147 type.registry] 
+New type domain.Valoration
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 11:11:22 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\src\main\resources\rides.temp' is opened by 14012@LAPTOP-B7RA03NQ
+
+[2025-10-07 11:11:22 #2 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:22 #3 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:11:22 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-07 11:11:22 #5 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:22 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:22 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-07 11:11:22 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-07 11:11:22 #9 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:22 #10 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:22 #11 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:22 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-10-07 11:11:22 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-10-07 11:11:22 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:22 #15 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:22 #16 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:22 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-10-07 11:11:22 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-07 11:11:22 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-10-07 11:11:22 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-10-07 11:11:22 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-10-07 11:11:22 #22 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:22 #23 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:22 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-10-07 11:11:22 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-10-07 11:11:23 #26 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #27 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #28 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #29 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #30 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #31 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #32 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #33 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #34 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #35 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #36 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #37 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #38 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #39 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #40 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #41 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #42 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #43 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #44 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #45 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #46 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #47 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #48 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #49 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #50 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #51 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #52 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #53 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #54 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #55 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #56 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #57 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #58 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #59 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #60 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #61 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #62 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #63 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #64 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #65 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #66 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #67 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #68 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #69 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #70 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #71 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #72 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #73 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #74 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #75 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #76 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #77 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #78 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #79 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #80 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #81 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #82 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:11:23 #83 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #84 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #85 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #86 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #87 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #88 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #89 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #90 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #91 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #92 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #93 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #94 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #95 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #96 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #97 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #98 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #99 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #100 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #101 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #102 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #103 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #104 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #105 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #106 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #107 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #108 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #109 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #110 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #111 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #112 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #113 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #114 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #115 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #116 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #117 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #118 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #119 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #120 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #121 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #122 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #123 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #124 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #125 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #126 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #127 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #128 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #129 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #130 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #131 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #132 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #133 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #134 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #135 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #136 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:11:23 #137 type.registry] 
+New type domain.User
+
+[2025-10-07 11:11:23 #138 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:11:23 #139 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:11:23 #140 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:11:23 #141 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:11:23 #142 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:11:23 #143 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:11:23 #144 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:11:23 #145 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:11:23 #146 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:11:23 #147 type.registry] 
+New type domain.Valoration
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 11:12:48 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\src\main\resources\rides.temp' is opened by 11468@LAPTOP-B7RA03NQ
+
+[2025-10-07 11:12:48 #2 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #3 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:12:48 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-07 11:12:48 #5 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-07 11:12:48 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-07 11:12:48 #9 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #10 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #11 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-10-07 11:12:48 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-10-07 11:12:48 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #15 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #16 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-10-07 11:12:48 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-07 11:12:48 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-10-07 11:12:48 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-10-07 11:12:48 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-10-07 11:12:48 #22 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #23 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-10-07 11:12:48 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-10-07 11:12:48 #26 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #27 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #28 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #29 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #30 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #31 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #32 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #33 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #34 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #35 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #36 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #37 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #38 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #39 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #40 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #41 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #42 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #43 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #44 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #45 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #46 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #47 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #48 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #49 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #50 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #51 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #52 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #53 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #54 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #55 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #56 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #57 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #58 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #59 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #60 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #61 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #62 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #63 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #64 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #65 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #66 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #67 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #68 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #69 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #70 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #71 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #72 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #73 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #74 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #75 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #76 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #77 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #78 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #79 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #80 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #81 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #82 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:12:48 #83 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #84 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #85 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #86 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #87 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #88 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #89 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #90 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #91 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #92 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #93 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #94 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #95 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #96 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #97 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #98 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #99 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #100 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #101 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #102 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #103 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #104 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #105 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #106 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #107 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #108 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #109 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #110 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #111 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #112 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #113 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #114 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #115 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #116 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #117 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #118 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #119 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #120 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #121 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #122 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #123 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:48 #124 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:48 #125 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:48 #126 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:48 #127 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:48 #128 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:48 #129 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:48 #130 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:48 #131 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:48 #132 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:48 #133 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:48 #134 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:49 #135 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:49 #136 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:12:49 #137 type.registry] 
+New type domain.User
+
+[2025-10-07 11:12:49 #138 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:12:49 #139 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:12:49 #140 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:12:49 #141 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:12:49 #142 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:12:49 #143 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:12:49 #144 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:12:49 #145 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:12:49 #146 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:12:49 #147 type.registry] 
+New type domain.Valoration
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-10-07 11:14:32 #1 store] 
+Database 'C:\Users\ikerm\git\Rides25_project\src\main\resources\rides.temp' is opened by 34428@LAPTOP-B7RA03NQ
+
+[2025-10-07 11:14:32 #2 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #3 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:14:32 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-10-07 11:14:32 #5 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-10-07 11:14:32 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-10-07 11:14:32 #9 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #10 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #11 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-10-07 11:14:32 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-10-07 11:14:32 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #15 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #16 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-10-07 11:14:32 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-10-07 11:14:32 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-10-07 11:14:32 #20 type] 
+Type domain.Valoration is not enhanced.
+
+[2025-10-07 11:14:32 #21 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-10-07 11:14:32 #22 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #23 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #24 type] 
+Type domain.Notification is not enhanced.
+
+[2025-10-07 11:14:32 #25 type] 
+Type domain.Request is not enhanced.
+
+[2025-10-07 11:14:32 #26 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #27 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #28 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #29 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #30 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #31 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #32 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #33 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #34 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #35 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #36 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #37 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #38 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #39 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #40 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #41 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #42 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #43 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #44 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #45 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #46 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #47 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #48 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #49 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #50 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #51 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #52 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #53 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #54 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #55 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #56 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #57 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #58 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #59 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #60 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #61 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #62 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #63 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #64 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #65 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #66 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #67 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #68 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #69 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #70 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #71 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #72 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #73 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #74 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #75 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #76 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #77 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #78 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #79 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #80 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #81 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #82 type.registry] 
+New type domain.Admin
+
+[2025-10-07 11:14:32 #83 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #84 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #85 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #86 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #87 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #88 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #89 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #90 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #91 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #92 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #93 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #94 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #95 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #96 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #97 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #98 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #99 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #100 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #101 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #102 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #103 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #104 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #105 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #106 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #107 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #108 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #109 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #110 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #111 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #112 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #113 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #114 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #115 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #116 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #117 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #118 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #119 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #120 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #121 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #122 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #123 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #124 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #125 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #126 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #127 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #128 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #129 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #130 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #131 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #132 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #133 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #134 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #135 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #136 type.registry] 
+New type domain.Valoration
+
+[2025-10-07 11:14:32 #137 type.registry] 
+New type domain.User
+
+[2025-10-07 11:14:32 #138 type.registry] 
+New type domain.Passenger
+
+[2025-10-07 11:14:32 #139 type.registry] 
+New type domain.Ride
+
+[2025-10-07 11:14:32 #140 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-10-07 11:14:32 #141 type.registry] 
+New type domain.Notification
+
+[2025-10-07 11:14:32 #142 type.registry] 
+New type domain.Request
+
+[2025-10-07 11:14:32 #143 type.registry] 
+New type domain.Booking
+
+[2025-10-07 11:14:32 #144 type.registry] 
+New type domain.Car
+
+[2025-10-07 11:14:32 #145 type.registry] 
+New type domain.Driver
+
+[2025-10-07 11:14:32 #146 type.registry] 
+New type domain.Reclamation
+
+[2025-10-07 11:14:32 #147 type.registry] 
+New type domain.Valoration
+

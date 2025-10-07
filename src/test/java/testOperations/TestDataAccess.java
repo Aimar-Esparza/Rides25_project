@@ -9,9 +9,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import configuration.ConfigXML;
-import domain.Car;
-import domain.Driver;
-import domain.Ride;
+import domain.*;
 
 
 public class TestDataAccess {
@@ -67,6 +65,28 @@ public class TestDataAccess {
 		} else 
 		return false;
     }
+	public boolean removePassenger(String passengerEmail) {
+		System.out.println(">> TestDataAccess: removeRide");
+		Passenger p = db.find(Passenger.class, passengerEmail);
+		if (p!=null) {
+			db.getTransaction().begin();
+			db.remove(p);
+			db.getTransaction().commit();
+			return true;
+		} else 
+		return false;
+    }
+	public boolean removeAdmin(String adminEmail) {
+		System.out.println(">> TestDataAccess: removeRide");
+		Admin a = db.find(Admin.class, adminEmail);
+		if (a!=null) {
+			db.getTransaction().begin();
+			db.remove(a);
+			db.getTransaction().commit();
+			return true;
+		} else 
+		return false;
+    }
 	public Driver createDriver(String email, String name) {
 		System.out.println(">> TestDataAccess: addDriver");
 		Driver driver=null;
@@ -81,10 +101,17 @@ public class TestDataAccess {
 			}
 			return driver;
     }
+	public boolean existPassenger(String email) {
+		 return  db.find(Passenger.class, email)!=null;
+		 
+	}
+	public boolean existAdmin(String email) {
+		 return  db.find(Driver.class, email)!=null;
+		 
+	}
 	public boolean existDriver(String email) {
 		 return  db.find(Driver.class, email)!=null;
 		 
-
 	}
 		
 		public Driver addDriverWithRide(String email, String name, String from, String to,  Date date, int nPlaces, float price) {
@@ -105,6 +132,34 @@ public class TestDataAccess {
 				}
 				return null;
 	    }
+		
+		//PRUEBA
+		public User createUser(String email, String username, String password, double money, boolean type) {
+			User us;
+			if(type) {
+				us = new Driver(email, username, password, money);
+			}else {
+				us = new Passenger(email, username, password, money);
+			}
+			if (! existDriver(us.getEmail()) && ! existPassenger(us.getEmail())) {
+				db.getTransaction().begin();
+				db.persist(us);
+				db.getTransaction().commit();
+				return us;
+			}
+			return null;
+		}
+		
+		public Admin addAdmin(String email, String adminName, String password, double money) {
+			Admin ad = new Admin(email, adminName, password, money);
+			if (! existAdmin(ad.getEmail())) {
+				db.getTransaction().begin();
+				db.persist(ad);
+				db.getTransaction().commit();
+				return ad;
+			}
+			return null;
+		}	
 		
 		
 		public boolean existRide(String email, String from, String to, Date date) {
