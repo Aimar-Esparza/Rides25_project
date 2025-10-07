@@ -12,19 +12,19 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
-@SuppressWarnings("serial")
-@XmlAccessorType(XmlAccessType.FIELD)
-@Entity
+//@SuppressWarnings("serial")
+//@XmlAccessorType(XmlAccessType.FIELD)
+//@Entity
 public class Request implements Serializable {
-	@Id 
-	@GeneratedValue
-	@XmlJavaTypeAdapter(IntegerAdapter.class)
-	@XmlID
+	//@Id 
+	//@GeneratedValue
+	//@XmlJavaTypeAdapter(IntegerAdapter.class)
+	//@XmlID
 	private Integer RequestId;
 	private String origin;
 	private String destination;
 	private int kant;
-	@XmlIDREF
+	//@XmlIDREF
 	private Passenger passenger;
 	private int valoration;
 	private Date rideDate;
@@ -125,3 +125,4 @@ public class Request implements Serializable {
 	
 	
 }
+

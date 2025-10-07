@@ -92,4 +92,14 @@ public class Passenger extends User implements Serializable  {
 		return super.equals(obj);
 	}
 	
+	public void addBooking(Booking b) {
+	    if (b != null && !booking.contains(b)) {
+	        booking.add(b);
+	    }
+	}
+
+	public void removeBooking(Booking b) {
+	    booking.remove(b);
+	}
+	
 }

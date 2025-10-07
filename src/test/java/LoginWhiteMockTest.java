@@ -91,10 +91,33 @@ public class LoginWhiteMockTest {
 		}
 	}
 	
-	
-	
 	@Test
 	public void test2() {
+		String passengeremail="passenger1@gmail.com";
+		String passengerPassword="777";
+		String falsePassword = "771";
+		try {
+			User a;
+			Passenger passenger=new Passenger(passengeremail,"",passengerPassword, 0);
+			Mockito.when(db.find(Passenger.class, passengeremail)).thenReturn(passenger);
+			sut.open();
+			a = sut.login(passengeremail, falsePassword);
+			if(a != null) {
+				sut.close();
+				fail();
+			}else {
+				sut.close();
+				assertTrue(true);
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+			sut.close();
+			fail();
+		}
+	}
+	
+	@Test
+	public void test3() {
 		String drivereremail="driver1@gmail.com";
 		String driverPassword="444";
 		try {
@@ -116,8 +139,35 @@ public class LoginWhiteMockTest {
 			fail();
 		}
 	} 
+	
 	@Test
-	public void test3() {
+	public void test4() {
+		String drivereremail="driver1@gmail.com";
+		String driverPassword="444";
+		String falsePassword = "441";
+		try {
+			User a;
+			Driver driver =new Driver(drivereremail,"",driverPassword, 0);
+			Mockito.when(db.find(Driver.class, drivereremail)).thenReturn(driver);
+			sut.open();
+			a = sut.login(drivereremail, falsePassword);
+			if(a != null) {
+				sut.close();
+				fail();
+			}else {
+				sut.close();
+				assertTrue(true);
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+			sut.close();
+			fail();
+		}
+	} 
+	
+	
+	@Test
+	public void test5() {
 		String adminemail="admin1@gmail.com";
 		String adminPassword="111";
 		try {
@@ -139,8 +189,35 @@ public class LoginWhiteMockTest {
 			fail();
 		}
 	} 
+	
 	@Test
-	public void test4() {
+	public void test6() {
+		String adminemail="admin1@gmail.com";
+		String adminPassword="111";
+		String falsePassword = "1111";
+		try {
+			User a;
+			Admin admin =new Admin(adminemail,"",adminPassword, 0);
+			Mockito.when(db.find(Admin.class, adminemail)).thenReturn(admin);
+			sut.open();
+			a = sut.login(adminemail, falsePassword);
+			if(a != null) {
+				sut.close();
+				fail();
+			}else {
+				sut.close();
+				assertTrue(true);
+			}
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+			sut.close();
+			fail();
+		}
+	} 
+	
+	
+	@Test
+	public void test7() {
 		String passengeremail="passenger1@gmail.com";
 		String passengerPassword="777";
 		String falseEmail = "passengerquenoexistendb@gmail.com";
@@ -151,56 +228,6 @@ public class LoginWhiteMockTest {
 			Mockito.when(db.find(Passenger.class, passengeremail)).thenReturn(passenger);
 			sut.open();
 			a = sut.login(falseEmail, falsePassword);
-			if(a != null) {
-				sut.close();
-				fail();
-			}else {
-				sut.close();
-				assertTrue(true);
-			}
-		} catch (Exception e) {
-			System.out.print(e.getMessage());
-			sut.close();
-			fail();
-		}
-	} 
-	
-	@Test
-	public void test5() {
-		String passengeremail="passenger1@gmail.com";
-		String passengerPassword="777";
-		String falseEmail = null;
-		try {
-			User a;
-			Passenger passenger=new Passenger(passengeremail,"",passengerPassword, 0);
-			Mockito.when(db.find(Passenger.class, passengeremail)).thenReturn(passenger);
-			sut.open();
-			a = sut.login(falseEmail, passengerPassword);
-			if(a != null) {
-				sut.close();
-				fail();
-			}else {
-				sut.close();
-				assertTrue(true);
-			}
-		} catch (Exception e) {
-			System.out.print(e.getMessage());
-			sut.close();
-			fail();
-		}
-	} 
-	
-	@Test
-	public void test6() {
-		String passengeremail="passenger1@gmail.com";
-		String passengerPassword="777";
-		String falsePassword = null;
-		try {
-			User a;
-			Passenger passenger=new Passenger(passengeremail,"",passengerPassword, 0);
-			Mockito.when(db.find(Passenger.class, passengeremail)).thenReturn(passenger);
-			sut.open();
-			a = sut.login(passengeremail, falsePassword);
 			if(a != null) {
 				sut.close();
 				fail();
