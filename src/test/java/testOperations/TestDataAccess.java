@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
 import configuration.ConfigXML;
@@ -184,7 +185,107 @@ public class TestDataAccess {
 
 		}
 
+		public Car addCar(String matricula, int nplaces, String email) {
+			db.getTransaction().begin();
+			Driver driver = db.find(Driver.class, email);
+			if (driver == null) {
+				System.out.println("⚠️ No se encontró el driver con email: " + email);
+				db.getTransaction().rollback();
+				return null;
+			}
+			Car car = driver.addCar(matricula, nplaces);
+			db.persist(car);
+			db.getTransaction().commit();
+			return car;
+		}
+		
+		public Ride addRide(String from, String to, Date date, int nPlaces, float price, String driverEmail, Car car) {
+			db.getTransaction().begin();
+			Driver driver = db.find(Driver.class, driverEmail);
+			if (driver == null) {
+				System.out.println("⚠️ No se encontró el driver con email: " + driverEmail);
+				db.getTransaction().rollback();
+				return null;
+			}
+			Ride ride = driver.addRide(from, to, date, nPlaces, price, car);
+			db.persist(ride);
+			db.getTransaction().commit();
+			return ride;
+		}
+		
+		public Booking addBooking(int rideNumber, String passengerEmail) {
+			db.getTransaction().begin();
+			Ride ride = db.find(Ride.class, rideNumber);
+			Passenger passenger = db.find(Passenger.class, passengerEmail);
 
+			if (ride == null || passenger == null) {
+				System.out.println("⚠️ Ride o Passenger no encontrados.");
+				db.getTransaction().rollback();
+				return null;
+			}
+
+			Booking booking = new Booking(ride, passenger);
+			ride.addBooking(booking);
+			passenger.addBooking(booking);
+			db.persist(booking);
+			db.getTransaction().commit();
+			return booking;
+		}
+		public MoneyTransaction addMoneyTransaction(double amount, boolean action, Date date, String userEmail, String reason, Booking booking) {
+		    EntityTransaction tx = db.getTransaction();
+		    try {
+		        tx.begin();
+		        User user = db.find(User.class, userEmail);
+		        if (user == null) {
+		            tx.rollback();
+		            throw new IllegalArgumentException("Usuario no encontrado: " + userEmail);
+		        }
+
+		        Booking managedBooking = null;
+		        if (booking != null) {
+		            managedBooking = db.find(Booking.class, booking.getBookingId());
+		            if (managedBooking == null) {
+		                managedBooking = null;
+		            }
+		        }
+		        MoneyTransaction mt;
+		        if (managedBooking != null) {
+		            mt = new MoneyTransaction(amount, action, date, user, reason, managedBooking);
+		        } else {
+		            mt = new MoneyTransaction(amount, action, date, user, reason);
+		        }
+		        db.persist(mt);
+		        tx.commit();
+		        return mt;
+		    } catch (RuntimeException e) {
+		        if (tx != null && tx.isActive()) tx.rollback();
+		        e.printStackTrace();
+		        return null;
+		    }
+		}
+		
+		public Booking addBookingWithoutRide(String passengerEmail) {
+		    EntityTransaction tx = db.getTransaction();
+		    try {
+		        tx.begin();
+
+		        Passenger passenger = db.find(Passenger.class, passengerEmail);
+		        if (passenger == null) {
+		            tx.rollback();
+		            throw new IllegalArgumentException("Pasajero no encontrado: " + passengerEmail);
+		        }
+		        Booking booking = new Booking(null, passenger);
+
+		        db.persist(booking);
+		        tx.commit();
+
+		        return booking;
+		    } catch (RuntimeException e) {
+		        if (tx != null && tx.isActive()) tx.rollback();
+		        e.printStackTrace();
+		        return null;
+		    }
+		}
 		
 }
 

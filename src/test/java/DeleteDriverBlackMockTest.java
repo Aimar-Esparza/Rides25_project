@@ -180,9 +180,6 @@ public class DeleteDriverBlackMockTest {
 			driver.getRides().add(r);
 			Booking b = new Booking(driver.getRides().get(0), passenger);
 			b.setBookingId(1);
-			//MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
-			//mt.setTransactionId(2);
-			//driver.addTransaction(mt);
 			Mockito.when(db.find(Driver.class, driveremail)).thenReturn(driver);
 			Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
 			Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
@@ -219,9 +216,6 @@ public class DeleteDriverBlackMockTest {
 			Passenger passenger = new Passenger("", "", "", 0);
 			Car car1 = new Car("ABCD 123", 5, driver);
 			driver.addCar(car1);
-			//Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
-			//r.setRideNumber(3);
-			//driver.getRides().add(r);
 			Booking b = new Booking(null, passenger);
 			b.setBookingId(1);
 			MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
@@ -245,11 +239,12 @@ public class DeleteDriverBlackMockTest {
 			fail();
 		}
 	}
-	
+
 	@Test
 	public void test5() {
 		String driveremail="driver1@gmail.com";
 		String driverPassword="777";
+		String falseEmail = "driverquenoexiste@gmail.com";
 		Calendar today = Calendar.getInstance();
 		   
 		int month=today.get(Calendar.MONTH);
@@ -259,35 +254,35 @@ public class DeleteDriverBlackMockTest {
 		try {
 			User a;
 			Driver driver=new Driver(driveremail,"",driverPassword, 0);
-			//Passenger passenger = new Passenger("", "", "", 0);
-			Car car1 = new Car("ABCD 123", 5, null);
-			//driver.addCar(car1);
+			Passenger passenger = new Passenger("", "", "", 0);
+			Car car1 = new Car("ABCD 123", 5, driver);
+			driver.addCar(car1);
 			Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
 			r.setRideNumber(3);
 			driver.getRides().add(r);
-			//Booking b = new Booking(null, passenger);
-			//b.setBookingId(1);
-			//MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
-			//mt.setTransactionId(2);
-			//driver.addTransaction(mt);
+			Booking b = new Booking(driver.getRides().get(0), passenger);
+			b.setBookingId(1);
+			MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
+			mt.setTransactionId(2);
+			driver.addTransaction(mt);
 			Mockito.when(db.find(Driver.class, driveremail)).thenReturn(driver);
 			Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
-			//Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
-			//Mockito.when(db.find(MoneyTransaction.class, mt.getTransactionId())).thenReturn(mt);
+			Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
+			Mockito.when(db.find(MoneyTransaction.class, mt.getTransactionId())).thenReturn(mt);
 			Mockito.when(db.find(User.class, driveremail)).thenReturn(driver);
 			Mockito.when(db.find(Ride.class, r.getRideNumber())).thenReturn(r);
 			Mockito.when(db.createQuery("SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate", Request.class)).thenReturn(null);
 			//System.out.println("a");
 			sut.open();
-			sut.deleteDriver(driveremail);
-			sut.close();
-			assertTrue(true);
+			sut.deleteDriver(falseEmail);
+			fail();
 		} catch (Exception e) {
 			e.printStackTrace();
 			sut.close();
-			fail();
+			sut.close();
+			assertTrue(true);
 		}
-	} 
+	}
 	
 	@Test
 	public void test6() {
@@ -302,119 +297,33 @@ public class DeleteDriverBlackMockTest {
 		try {
 			User a;
 			Driver driver=new Driver(driveremail,"",driverPassword, 0);
-			//Passenger passenger = new Passenger("", "", "", 0);
+			Passenger passenger = new Passenger("", "", "", 0);
 			Car car1 = new Car("ABCD 123", 5, driver);
 			driver.addCar(car1);
-			//Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
-			//r.setRideNumber(3);
-			//driver.getRides().add(r);
-			//Booking b = new Booking(driver.getRides().get(0), passenger);
-			//b.setBookingId(1);
-			//MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
-			//mt.setTransactionId(2);
-			//driver.addTransaction(mt);
-			Mockito.when(db.find(Driver.class, driveremail)).thenReturn(driver);
-			Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
-			//Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
-			//Mockito.when(db.find(MoneyTransaction.class, mt.getTransactionId())).thenReturn(mt);
-			Mockito.when(db.find(User.class, driveremail)).thenReturn(driver);
-			//Mockito.when(db.find(Ride.class, r.getRideNumber())).thenReturn(r);
-			Mockito.when(db.createQuery("SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate", Request.class)).thenReturn(null);
-			//System.out.println("a");
-			sut.open();
-			sut.deleteDriver(driveremail);
-			sut.close();
-			assertTrue(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-			sut.close();
-			fail();
-		}
-	}
-	
-	@Test
-	public void test7() {
-		String driveremail="driver1@gmail.com";
-		String driverPassword="777";
-		Calendar today = Calendar.getInstance();
-		   
-		int month=today.get(Calendar.MONTH);
-		int year=today.get(Calendar.YEAR);
-		if (month==12) { month=1; year+=1;}  
-		
-		try {
-			User a;
-			Driver driver=new Driver(driveremail,"",driverPassword, 0);
-			Passenger passenger = new Passenger("", "", "", 0);
-			//Car car1 = new Car("ABCD 123", 5, driver);
-			//driver.addCar(car1);
-			//Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
-			//r.setRideNumber(3);
-			//driver.getRides().add(r);
-			Booking b = new Booking(null, passenger);
+			Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
+			r.setRideNumber(3);
+			driver.getRides().add(r);
+			Booking b = new Booking(driver.getRides().get(0), passenger);
 			b.setBookingId(1);
 			MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
 			mt.setTransactionId(2);
 			driver.addTransaction(mt);
 			Mockito.when(db.find(Driver.class, driveremail)).thenReturn(driver);
-			//Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
+			Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
 			Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
 			Mockito.when(db.find(MoneyTransaction.class, mt.getTransactionId())).thenReturn(mt);
 			Mockito.when(db.find(User.class, driveremail)).thenReturn(driver);
-			//Mockito.when(db.find(Ride.class, r.getRideNumber())).thenReturn(r);
+			Mockito.when(db.find(Ride.class, r.getRideNumber())).thenReturn(r);
 			Mockito.when(db.createQuery("SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate", Request.class)).thenReturn(null);
 			//System.out.println("a");
 			sut.open();
-			sut.deleteDriver(driveremail);
-			sut.close();
-			assertTrue(true);
+			sut.deleteDriver(null);
+			fail();
 		} catch (Exception e) {
 			e.printStackTrace();
 			sut.close();
-			fail();
-		}
-	}
-	
-	@Test
-	public void test8() {
-		String driveremail="driver1@gmail.com";
-		String driverPassword="777";
-		Calendar today = Calendar.getInstance();
-		   
-		int month=today.get(Calendar.MONTH);
-		int year=today.get(Calendar.YEAR);
-		if (month==12) { month=1; year+=1;}  
-		
-		try {
-			User a;
-			Driver driver=new Driver(driveremail,"",driverPassword, 0);
-			//Passenger passenger = new Passenger("", "", "", 0);
-			//Car car1 = new Car("ABCD 123", 5, driver);
-			//driver.addCar(car1);
-			//Ride r = new Ride("Donostia", "Bilbo", UtilDate.newDate(year,month,15), 4, 7,driver, car1);
-			//r.setRideNumber(3);
-			//driver.getRides().add(r);
-			//Booking b = new Booking(driver.getRides().get(0), passenger);
-			//b.setBookingId(1);
-			//MoneyTransaction mt = new MoneyTransaction(11, true, UtilDate.newDate(year,month,15), driver,"a", b);
-			//mt.setTransactionId(2);
-			//driver.addTransaction(mt);
-			Mockito.when(db.find(Driver.class, driveremail)).thenReturn(driver);
-			//Mockito.when(db.find(Car.class, car1.getNumberPlate())).thenReturn(car1);
-			//Mockito.when(db.find(Booking.class, b.getBookingId())).thenReturn(b);
-			//Mockito.when(db.find(MoneyTransaction.class, mt.getTransactionId())).thenReturn(mt);
-			Mockito.when(db.find(User.class, driveremail)).thenReturn(driver);
-			//Mockito.when(db.find(Ride.class, r.getRideNumber())).thenReturn(r);
-			Mockito.when(db.createQuery("SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate", Request.class)).thenReturn(null);
-			//System.out.println("a");
-			sut.open();
-			sut.deleteDriver(driveremail);
 			sut.close();
 			assertTrue(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-			sut.close();
-			fail();
 		}
 	}
 

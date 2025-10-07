@@ -145,6 +145,15 @@ public class DataAccess  {
 		}
 	}
 	
+	/**
+	 * 
+	 * Attempts to authenticate a user in the system using their email and password.
+	 * 
+	 * @param email of the user	 
+	 * @param password of the user
+	 * @return User if exists on the DB; NULL instead
+	 * @author Iker and Aimar
+	 */
 	public User login(String email, String password) {
 		User us = null;
 		Driver dr = db.find(Driver.class, email);
@@ -198,6 +207,12 @@ public class DataAccess  {
 		//cambio de prueba
 	}
 	
+	/**
+	 * Deletes a driver from the system, removing all their rides, cars, and transactions first.
+	 * 
+	 * @param email  The email of the driver to be deleted
+	 * @author Iker and Aimar
+	 */
 	public void deleteDriver(String email) {
 		Driver driver = db.find(Driver.class, email);
 		while (driver.getRides().size() > 0 ) {

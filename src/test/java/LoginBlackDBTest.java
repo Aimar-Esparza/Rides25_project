@@ -6,7 +6,7 @@ import dataAccess.DataAccess;
 import domain.*;
 import testOperations.TestDataAccess;
 
-public class LoginWhiteTest {
+public class LoginBlackDBTest {
 
     // sut: system under test
     static DataAccess sut = new DataAccess();
@@ -63,7 +63,7 @@ public class LoginWhiteTest {
         try {
             testDA.open();
             boolean exist = testDA.existDriver(email);
-            if (!exist) driver = (Driver) testDA.createUser(email, "DriverName", password, 0, false);
+            if (!exist) driver = (Driver) testDA.createUser(email, "DriverName", password, 0, true);
             testDA.close();
 
             sut.open();
@@ -125,7 +125,7 @@ public class LoginWhiteTest {
         String password = "123";
 
         try {
-            // asegurar que no exista
+            // asegurar que no existe
             testDA.open();
             testDA.removePassenger(email);
             testDA.removeDriver(email);
@@ -174,7 +174,7 @@ public class LoginWhiteTest {
     }
 
     // ============================================================
-    // test6: Email nulo
+    // test6: Email null
     // ============================================================
     @Test
     public void test6() {
@@ -186,11 +186,12 @@ public class LoginWhiteTest {
             assertNull(u);
         } catch (Exception e) {
             fail("No debe lanzar excepción con email nulo");
+            System.out.print(e.getMessage());
         }
     }
 
     // ============================================================
-    // test7: Contraseña nula
+    // test7: Contraseña null
     // ============================================================
     @Test
     public void test7() {
