@@ -17,7 +17,7 @@ public class DeleteDriverWhiteDBTest {
     @Test
     public void test1() {
         // Caso: Driver con rides, cars y transacciones
-        String driverEmail = "driver1@gmail.com";
+        String driverEmail = "driver100@gmail.com";
         String password = "777";
         Calendar today = Calendar.getInstance();
         int month = today.get(Calendar.MONTH) + 1;
@@ -27,7 +27,7 @@ public class DeleteDriverWhiteDBTest {
         try {
             testDA.open();
             Driver driver = (Driver) testDA.createUser(driverEmail, "Driver1", password, 0, true);
-            Passenger passenger = (Passenger) testDA.createUser("p1@gmail.com", "P1", "p", 0, false);
+            Passenger passenger = (Passenger) testDA.createUser("p100@gmail.com", "P1", "p", 0, false);
             Car car = testDA.addCar("AAA 111", 4, driver.getEmail());
             Ride ride = testDA.addRide("Donostia", "Bilbo", UtilDate.newDate(year, month, 15), 4, 7, driver.getEmail(), car);
             Booking booking = testDA.addBooking(ride.getRideNumber(), passenger.getEmail());
