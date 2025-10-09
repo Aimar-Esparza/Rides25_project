@@ -17,7 +17,7 @@ public class DeleteDriverBlackDBTest {
     @Test
     public void test1() {
         // Caso: Driver con rides, cars y transacciones
-        String driverEmail = "driver10@gmail.com";
+        String driverEmail = "driver1@gmail.com";
         String password = "777";
         Calendar today = Calendar.getInstance();
         int month = today.get(Calendar.MONTH);
