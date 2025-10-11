@@ -159,21 +159,16 @@ public class DataAccess  {
 		Driver dr = db.find(Driver.class, email);
 		Passenger pa = db.find(Passenger.class, email);
 		Admin ad = db.find(Admin.class, email);
-		if (pa != null) {
-			if (pa.getPassword().equals(password)) {
+		if (pa != null && pa.getPassword().equals(password)) {
 				us = pa;
-			}
-		}else if (dr != null){
-			if (dr.getPassword().equals(password)) {
-				us = dr;
-			}
-		}else if(ad != null) {
-			if(ad.getPassword().equals(password)) {
-				us = ad;
-			}
+		}else if (dr != null && dr.getPassword().equals(password)){
+			us = dr;
+		}else if(ad != null && ad.getPassword().equals(password)) {
+			us = ad;
 		}
 		return us;
 	}
+
 	
 	/** 
 	 * This method enters a new user if it is not there
@@ -519,29 +514,36 @@ public class DataAccess  {
 	public List<Valoration> getValorations(String email){
 		List<Valoration> valList = new ArrayList<Valoration>();
 		if (isDriver(email)) {
-			Driver d = db.find(Driver.class, email);
-			TypedQuery<Ride> query = db.createQuery("SELECT r FROM Ride r where r.dirver = :driver", Ride.class);
-			query.setParameter("driver", d);
-			for(Ride r : query.getResultList()) {
-				for (Booking b : r.getBookings()) {
-					if(b.getDriverValoration() != null) {
-						valList.add(b.getDriverValoration());
-					}
-				}
-			}
-			return valList;
+			return driverGetValorations(email, valList);
 		}else {
-			Passenger p = db.find(Passenger.class, email);
-			TypedQuery<Booking> query = db.createQuery("SELECT r FROM Booking r where r.passenger = :passenger", Booking.class);
-			query.setParameter("passenger", p);
-			for(Booking b : query.getResultList()) {
+			return passengerGetValorations(email, valList);
+		}
+	}
+	public List<Valoration> driverGetValorations(String email, List<Valoration> valList){
+		Driver d = db.find(Driver.class, email);
+		TypedQuery<Ride> query = db.createQuery("SELECT r FROM Ride r where r.dirver = :driver", Ride.class);
+		query.setParameter("driver", d);
+		for(Ride r : query.getResultList()) {
+			for (Booking b : r.getBookings()) {
 				if(b.getDriverValoration() != null) {
 					valList.add(b.getDriverValoration());
 				}
 			}
-			return valList;
 		}
+		return valList;
+	}	
+	public List<Valoration> passengerGetValorations(String email, List<Valoration> valList){
+		Passenger p = db.find(Passenger.class, email);
+		TypedQuery<Booking> query = db.createQuery("SELECT r FROM Booking r where r.passenger = :passenger", Booking.class);
+		query.setParameter("passenger", p);
+		for(Booking b : query.getResultList()) {
+			if(b.getDriverValoration() != null) {
+				valList.add(b.getDriverValoration());
+			}
+		}
+		return valList;
 	}
+
 	
 	public void rejectBooking(int bookingId) {
 		db.getTransaction().begin();
