@@ -169,24 +169,48 @@ public class DataAccess  {
 		return us;
 	}
 
+	private class UserData {
+	    private String email;
+	    private String username;
+	    private String password;
+	    private double money;
+	    private boolean isDriver;
+
+	    public UserData(String email, String username, String password, double money, boolean isDriver) {
+	        this.email = email;
+	        this.username = username;
+	        this.password = password;
+	        this.money = money;
+	        this.isDriver = isDriver;
+	    }
+
+	    public String getEmail() { return email; }
+	    public String getUsername() { return username; }
+	    public String getPassword() { return password; }
+	    public double getMoney() { return money; }
+	    public boolean isDriver() { return isDriver; }
+	}
+	
+	public User createUser(String email, String username, String password, double money, boolean type) {
+	    UserData data = new UserData(email, username, password, money, type);
+	    return createUser(data);
+	}
 	
 	/** 
 	 * This method enters a new user if it is not there
 	 */
-	public User createUser(String email, String username, String password, double money, boolean type) {
-		User us;
-		if(type) {
-			us = new Driver(email, username, password, money);
-		}else {
-			us = new Passenger(email, username, password, money);
-		}
-		if (! isDriver(us.getEmail()) && ! isPassenger(us.getEmail())) {
-			db.getTransaction().begin();
-			db.persist(us);
-			db.getTransaction().commit();
-			return us;
-		}
-		return null;
+	public User createUser(UserData data) {
+	    User us = data.isDriver() 
+	        ? new Driver(data.getEmail(), data.getUsername(), data.getPassword(), data.getMoney())
+	        : new Passenger(data.getEmail(), data.getUsername(), data.getPassword(), data.getMoney());
+
+	    if (!isDriver(us.getEmail()) && !isPassenger(us.getEmail())) {
+	        db.getTransaction().begin();
+	        db.persist(us);
+	        db.getTransaction().commit();
+	        return us;
+	    }
+	    return null;
 	}
 	
 	public void deleteUser(String email) {
@@ -269,33 +293,31 @@ public class DataAccess  {
 		return false;
 	}
 	
-	public void addMoney(String email, double money, String reason, Booking b) {
-		db.getTransaction().begin();
-		User us = db.find(User.class, email);
-		us.setMoney(us.getMoney() + money);
-		addTransaction(us, money, true, new Date(),reason, b);
-		db.getTransaction().commit();
-		if(us instanceof Driver) {
+	private void updateMoneyWrapper(String email, double money, String reason, Booking b, boolean isAdding) {
+	    db.getTransaction().begin();
+	    User us = db.find(User.class, email);
+
+	    if (us != null) {
+	        double finalAmount = isAdding ? us.getMoney() + money : us.getMoney() - money;
+	        us.setMoney(finalAmount);
+
+	        addTransaction(us, isAdding ? money : -money, isAdding, new Date(), reason, b);
+	    }
+
+	    db.getTransaction().commit();
+	    if(us instanceof Driver) {
 			MainDriverGUI.setDriver((Driver)us);
 		}else {
 			MainPassengerGUI.setPassenger((Passenger)us);
-		} 
+		}
+	}
+
+	public void addMoney(String email, double money, String reason, Booking b) {
+	    updateMoneyWrapper(email, money, reason, b, true);
 	}
 
 	public void removeMoney(String email, double money, String reason, Booking b) {
-		db.getTransaction().begin();
-		
-		User us = db.find(User.class, email);
-		if(us.getMoney() - money >= 0) {
-			us.setMoney(us.getMoney() - money);
-			addTransaction(us, money, false, new Date(),reason, b);
-		}
-		db.getTransaction().commit();
-		if(us instanceof Driver) {
-			MainDriverGUI.setDriver((Driver)us);
-		}else {
-			MainPassengerGUI.setPassenger((Passenger)us);
-		} 
+	    updateMoneyWrapper(email, money, reason, b, false);
 	}
 	
 	public MoneyTransaction addTransaction(User us, double amount, boolean action, Date date, String reason, Booking b) {
@@ -415,30 +437,46 @@ public class DataAccess  {
 	
 	 
 	
-	public void priorityReservation(int ridenumber) {
-		Ride ride = db.find(Ride.class, ridenumber);
-		TypedQuery<Request> query = db.createQuery("SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate", Request.class);
-		query.setParameter("origin", ride.getFrom());
-		query.setParameter("destination", ride.getTo());
-		query.setParameter("date", ride.getDate());
-		int kant = ride.getnPlaces();
-		for (Request request : query.getResultList()) {
-			if (request.getKant() <= kant) {
-				if(request.getValoration() <= ride.getDriver().getVal()) {
-					if(request.isAutoBuy()) {
-						if((ride.getPrice()*request.getKant()) <= request.getPassenger().getMoney()) {
-							reservate(request.getPassenger().getEmail(), ridenumber, request.getKant());
-							createNotification(ride, request.getPassenger().getEmail(), 'C');
-							deleteRequest(request.getRequestId());
-							kant -= request.getKant();
-						}else {
-							createNotification(ride, request.getPassenger().getEmail(), 'N');
-						}
-					}
-				}
-			}
-		}
+	public void priorityReservation(int rideNumber) {
+	    Ride ride = db.find(Ride.class, rideNumber);
+	    List<Request> requests = getMatchingRequests(ride);
+	    int availableSeats = ride.getnPlaces();
+
+	    for (Request request : requests) {
+	        if (!canReserve(request, ride, availableSeats)) {
+	            continue; // skip to next request
+	        }
+
+	        processReservation(request, ride, rideNumber);
+	        availableSeats -= request.getKant();
+	    }
 	}
+
+	public List<Request> getMatchingRequests(Ride ride) {
+	    TypedQuery<Request> query = db.createQuery(
+	        "SELECT r FROM Request r WHERE r.origin = :origin AND r.destination = :destination AND r.rideDate = :date ORDER BY r.requestDate",
+	        Request.class
+	    );
+	    query.setParameter("origin", ride.getFrom());
+	    query.setParameter("destination", ride.getTo());
+	    query.setParameter("date", ride.getDate());
+	    return query.getResultList();
+	}
+
+	public boolean canReserve(Request request, Ride ride, int availableSeats) {
+	    if (request.getKant() > availableSeats) return false;
+	    if (request.getValoration() > ride.getDriver().getVal()) return false;
+	    if (!request.isAutoBuy()) return false;
+	    double totalCost = ride.getPrice() * request.getKant();
+	    return totalCost <= request.getPassenger().getMoney();
+	}
+
+	public void processReservation(Request request, Ride ride, int rideNumber) {
+	    reservate(request.getPassenger().getEmail(), rideNumber, request.getKant());
+	    createNotification(ride, request.getPassenger().getEmail(), 'C');
+	    deleteRequest(request.getRequestId());
+	}
+
 	public void reservate(String email, int ridenumber, int kant) {
 		for(int i = 0; i < kant; i++){
 			book(ridenumber,email);
