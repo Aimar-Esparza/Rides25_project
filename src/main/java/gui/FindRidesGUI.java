@@ -236,10 +236,7 @@ public class FindRidesGUI extends JFrame {
 
 						e1.printStackTrace();
 					}
-					tableRides.getColumnModel().getColumn(0).setPreferredWidth(170);
-					tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
-					tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
-					tableRides.getColumnModel().removeColumn(tableRides.getColumnModel().getColumn(3)); // not shown in JTable
+					tableRidesConf();
 
 				}
 			} 
@@ -333,10 +330,7 @@ public class FindRidesGUI extends JFrame {
 
 			e1.printStackTrace();
 		}
-		tableRides.getColumnModel().getColumn(0).setPreferredWidth(170);
-		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
-		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
-		tableRides.getColumnModel().removeColumn(tableRides.getColumnModel().getColumn(3)); // not shown in JTable
+		tableRidesConf();
 	}
 	
 	
@@ -388,4 +382,11 @@ public class FindRidesGUI extends JFrame {
 	public FindRidesGUI() {
 		new FindRidesGUI(this.userType);
 	}
+	public void tableRidesConf() {
+		tableRides.getColumnModel().getColumn(0).setPreferredWidth(170);
+		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
+		tableRides.getColumnModel().getColumn(1).setPreferredWidth(30);
+		tableRides.getColumnModel().removeColumn(tableRides.getColumnModel().getColumn(3));
+	}
+
 }

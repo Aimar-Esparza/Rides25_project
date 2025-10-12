@@ -385,11 +385,35 @@ public class DataAccess  {
 		db.getTransaction().commit();
 	}
 	
+	private class ValorationPack {
+		private int bookingId;
+		private boolean done;
+		private int val;
+		private String com;
+		private String email;
+		
+		public ValorationPack (int bookingId, boolean done, int val, String com, String email) {
+			this.bookingId = bookingId;
+			this.done = done;
+			this.val = val;
+			this.com = com;
+			this.email = email;
+		}
+		public int getBookingId() {return bookingId;}
+		public boolean getDone() {return done;}
+		public int getVal() {return val;}
+		public String getCom() {return com;}
+		public String getEmail() {return email;}
+	}
 	public void addValoration(int bookingId, boolean done, int val, String com, String email) {
-		if(isDriver(email)) {
-			addDriverValoration(bookingId, done, val, com);
-		}else if ( isPassenger(email)) {
-			addPassengerValoration(bookingId, done, val, com);
+		addValoration(new ValorationPack(bookingId, done, val, com, email));
+	}
+	
+	public void addValoration(ValorationPack pack) {
+		if(isDriver(pack.getEmail())){
+			addDriverValoration(pack.getBookingId(), pack.getDone(), pack.getVal(), pack.getCom());
+		}else if ( isPassenger(pack.getEmail())) {
+			addPassengerValoration(pack.getBookingId(), pack.getDone(), pack.getVal(), pack.getCom());
 		}
 	}
 	
