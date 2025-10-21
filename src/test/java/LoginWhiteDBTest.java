@@ -20,7 +20,7 @@ public class LoginWhiteDBTest {
     // ============================================================
     // test1: Passenger login correcto
     // ============================================================
-   /*
+   
     @Test
     public void test1() {
         String email = "passenger1@gmail.com";
@@ -48,7 +48,7 @@ public class LoginWhiteDBTest {
             testDA.close();
         }
     }
-*/
+
     
     // ============================================================
     // test2: Passenger contraseña incorrecta

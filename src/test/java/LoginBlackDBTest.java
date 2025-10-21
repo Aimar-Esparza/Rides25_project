@@ -16,7 +16,7 @@ public class LoginBlackDBTest {
     private Passenger passenger;
     private Driver driver;
     private Admin admin;
-/*
+
     @Test
     public void test1() {
         String email = "passenger1@gmail.com";
@@ -51,7 +51,7 @@ public class LoginBlackDBTest {
             testDA.close();
         }
     }
-*/
+
     
     // ============================================================
     // test2: Driver login correcto

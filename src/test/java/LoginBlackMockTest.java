@@ -66,7 +66,7 @@ public class LoginBlackMockTest {
 	
 	
 	Driver driver;
-	/*
+	
 	@Test
 	public void test1() {
 		String passengeremail="passenger1@gmail.com";
@@ -91,7 +91,7 @@ public class LoginBlackMockTest {
 		}
 	}
 	
-	*/
+	
 	
 	@Test
 	public void test2() {
