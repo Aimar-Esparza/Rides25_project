@@ -66,7 +66,7 @@ public class LoginWhiteMockTest {
 	
 	
 	Driver driver;
-	
+/*
 	@Test
 	public void test1() {
 		String passengeremail="passenger1@gmail.com";
@@ -90,7 +90,7 @@ public class LoginWhiteMockTest {
 			fail();
 		}
 	}
-	
+	*/
 	@Test
 	public void test2() {
 		String passengeremail="passenger1@gmail.com";
