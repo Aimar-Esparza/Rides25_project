@@ -10,6 +10,8 @@ import configuration.ConfigXML;
 import dataAccess.DataAccess;
 import domain.*;
 import exceptions.RideMustBeLaterThanTodayException;
+import iterators.ExtendedIterator;
+import iterators.ExtendedIteratorImpl;
 import exceptions.RideAlreadyExistException;
 
 /**
@@ -176,6 +178,12 @@ public class BLFacadeImplementation  implements BLFacade {
 		return departLocations;
     	
     }
+    
+    @WebMethod public ExtendedIterator<String> getDepartCitiesIterator() {
+        return new ExtendedIteratorImpl<String>(getDepartCities());
+    }
+    
+    
     /**
      * {@inheritDoc}
      */

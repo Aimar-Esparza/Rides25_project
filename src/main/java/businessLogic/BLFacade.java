@@ -5,6 +5,7 @@ import java.util.List;
 
 import domain.*;
 import exceptions.RideMustBeLaterThanTodayException;
+import iterators.ExtendedIterator;
 import exceptions.RideAlreadyExistException;
 
 import javax.jws.WebMethod;
@@ -74,6 +75,8 @@ public interface BLFacade  {
 	 * @return collection of cities
 	 */
 	@WebMethod public List<String> getDepartCities();
+	
+	@WebMethod public ExtendedIterator<String> getDepartCitiesIterator();
 	
 	/**
 	 * This method returns all the arrival destinations, from all rides that depart from a given city  
