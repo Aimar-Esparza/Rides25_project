@@ -1,0 +1,624 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 10:11:25 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 27844@Aimar-PC
+
+[2025-11-15 10:11:25 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 10:11:25 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 10:11:25 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 10:11:25 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 10:11:25 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 10:11:25 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 10:11:25 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 10:11:25 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 10:11:25 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 10:11:25 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 10:11:25 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 10:11:25 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 10:11:25 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 10:11:25 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 10:11:25 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 10:11:25 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 10:11:25 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 10:11:25 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 10:11:25 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 10:11:25 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 10:11:25 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 10:11:25 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 10:11:25 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 10:11:25 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 10:11:25 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 10:11:25 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 10:11:25 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 10:11:25 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 10:11:25 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 10:11:25 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 10:11:25 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 10:11:25 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 10:11:25 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 11:51:35 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 22644@Aimar-PC
+
+[2025-11-15 11:51:35 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 11:51:35 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 11:51:35 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 11:51:35 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 11:51:35 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 11:51:35 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 11:51:35 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 11:51:35 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 11:51:35 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 11:51:35 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 11:51:35 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 11:51:35 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 11:51:35 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 11:51:35 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 11:51:35 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 11:51:35 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 11:51:35 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 11:51:35 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 11:51:35 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 11:51:35 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 11:51:35 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 11:51:35 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 11:51:35 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 11:51:35 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 11:51:35 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 11:51:35 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 11:51:35 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 11:51:35 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 11:51:35 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 11:51:35 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 11:51:35 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 11:51:35 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 11:51:35 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 12:57:03 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 6188@Aimar-PC
+
+[2025-11-15 12:57:04 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 12:57:04 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 12:57:04 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 12:57:04 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 12:57:04 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 12:57:04 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 12:57:04 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 12:57:04 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 12:57:04 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 12:57:04 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 12:57:04 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 12:57:04 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 12:57:04 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 12:57:04 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 12:57:04 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 12:57:04 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 12:57:04 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 12:57:04 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 12:57:04 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 12:57:04 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 12:57:04 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 12:57:04 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 12:57:04 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 12:57:04 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 12:57:04 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 12:57:04 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 12:57:04 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 12:57:04 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 12:57:04 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 12:57:04 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 12:57:04 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 12:57:04 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 12:57:04 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 12:57:46 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 2308@Aimar-PC
+
+[2025-11-15 12:57:47 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 12:57:47 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 12:57:47 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 12:57:47 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 12:57:47 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 12:57:47 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 12:57:47 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 12:57:47 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 12:57:47 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 12:57:47 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 12:57:47 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 12:57:47 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 12:57:47 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 12:57:47 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 12:57:47 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 12:57:47 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 12:57:47 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 12:57:47 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 12:57:47 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 12:57:47 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 12:57:47 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 12:57:47 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 12:57:47 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 12:57:47 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 12:57:47 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 12:57:47 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 12:57:47 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 12:57:47 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 12:57:47 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 12:57:47 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 12:57:47 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 12:57:47 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 12:57:47 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 12:59:12 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 2916@Aimar-PC
+
+[2025-11-15 12:59:13 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 12:59:13 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 12:59:13 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 12:59:13 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 12:59:13 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 12:59:13 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 12:59:13 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 12:59:13 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 12:59:13 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 12:59:13 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 12:59:13 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 12:59:13 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 12:59:13 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 12:59:13 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 12:59:13 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 12:59:13 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 12:59:13 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 12:59:13 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 12:59:13 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 12:59:13 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 12:59:13 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 12:59:13 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 12:59:13 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 12:59:13 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 12:59:13 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 12:59:13 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 12:59:13 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 12:59:13 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 12:59:13 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 12:59:13 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 12:59:13 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 12:59:13 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 12:59:13 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-15 13:01:52 #1 store] 
+Database 'C:\Users\Aimar\git\Rides25_project\src\main\resources\rides.temp' is opened by 4844@Aimar-PC
+
+[2025-11-15 13:01:52 #2 type.registry] 
+New type domain.User
+
+[2025-11-15 13:01:52 #3 type.registry] 
+New type domain.Admin
+
+[2025-11-15 13:01:52 #4 type] 
+Type domain.User is not enhanced.
+
+[2025-11-15 13:01:52 #5 type.registry] 
+New type domain.Ride
+
+[2025-11-15 13:01:52 #6 type.registry] 
+New type domain.MoneyTransaction
+
+[2025-11-15 13:01:52 #7 type] 
+Type domain.Admin is not enhanced.
+
+[2025-11-15 13:01:52 #8 type] 
+Type domain.Ride is not enhanced.
+
+[2025-11-15 13:01:52 #9 type.registry] 
+New type domain.Booking
+
+[2025-11-15 13:01:52 #10 type.registry] 
+New type domain.Car
+
+[2025-11-15 13:01:52 #11 type.registry] 
+New type domain.Driver
+
+[2025-11-15 13:01:52 #12 type] 
+Type domain.MoneyTransaction is not enhanced.
+
+[2025-11-15 13:01:52 #13 type] 
+Type domain.Booking is not enhanced.
+
+[2025-11-15 13:01:52 #14 type.registry] 
+New type domain.Reclamation
+
+[2025-11-15 13:01:52 #15 type.registry] 
+New type domain.Valoration
+
+[2025-11-15 13:01:52 #16 type.registry] 
+New type domain.Passenger
+
+[2025-11-15 13:01:52 #17 type] 
+Type domain.Car is not enhanced.
+
+[2025-11-15 13:01:52 #18 type] 
+Type domain.Driver is not enhanced.
+
+[2025-11-15 13:01:52 #19 type] 
+Type domain.Reclamation is not enhanced.
+
+[2025-11-15 13:01:52 #20 type] 
+Type domain.Passenger is not enhanced.
+
+[2025-11-15 13:01:52 #21 type.registry] 
+New type domain.Notification
+
+[2025-11-15 13:01:52 #22 type.registry] 
+New type domain.Request
+
+[2025-11-15 13:01:52 #23 type] 
+Type domain.Notification is not enhanced.
+
+[2025-11-15 13:01:52 #24 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2025-11-15 13:01:52 #25 type.registry] 
+New type java.util.LinkedList<java.lang.Object>
+
+[2025-11-15 13:01:52 #26 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2025-11-15 13:01:52 #27 type.registry] 
+New type java.util.Vector<domain.MoneyTransaction>
+
+[2025-11-15 13:01:52 #28 type.registry] 
+New type java.util.Vector<domain.Ride>
+
+[2025-11-15 13:01:52 #29 type.registry] 
+New type java.util.Vector<domain.Car>
+
+[2025-11-15 13:01:52 #30 type.registry] 
+New type java.util.Vector<domain.Booking>
+
+[2025-11-15 13:01:52 #31 type.registry] 
+New type java.util.Vector<domain.Request>
+
+[2025-11-15 13:01:52 #32 type.registry] 
+New type java.util.Vector<domain.Notification>
+
+[2025-11-15 13:01:52 #33 type.registry] 
+New type java.util.LinkedList<domain.Ride>
+
+[2025-11-15 13:01:52 #34 type.registry] 
+New type java.util.ArrayList<domain.Booking>
+

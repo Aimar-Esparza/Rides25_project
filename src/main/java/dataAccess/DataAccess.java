@@ -136,6 +136,7 @@ public class DataAccess  {
 			db.persist(driver2);
 			db.persist(driver3);
 			db.persist(passenger1);
+			
 	
 			db.getTransaction().commit();
 			System.out.println("Db initialized");
